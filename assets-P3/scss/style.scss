@@ -1,8 +1,70 @@
 @import "./variables";
+@import "./mixins";
 
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+section {
+    padding: 15px;
+}
 .title-font {
     font-family: $title-font;
 }
 .texte-font {
     font-family: $texte-font;
+}
+.header {
+    &__logo {
+        @include logo-position;
+    }
+    &__arrow {
+        position: absolute;
+        line-height: 4;
+        color: $normal-link;
+        text-decoration: none;
+    }
+}
+.location {
+    width: 100%;
+    background-color: #eaeaea;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #353535;
+    font-size: 1em;
+    box-shadow:  1px 1px 3px -1px #bebdbd inset;
+    &__icon {
+        margin: 0 5px;
+    }
+    &__input {
+    outline: none;
+    border: none;
+    background-color: #eaeaea;
+    }
+}
+.explore {
+    background-color: #f6f6f6;
+    &__heading {
+        text-align: center;
+        font-size: $h2-homepage;
+    }
+    &__p {
+        text-align: center;
+        font-weight: 100;
+    }
+}
+.btn {
+    border-radius: 20px;
+    padding: 13px;
+    display: block;
+    margin: auto;
+    background: $gardient-btn;
+    border: none;
+    color: white;
+    font-size: 0.9em;
+    outline: none;
+    box-shadow: 6px 15px 5px -12px #cfcfcf;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }

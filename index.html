@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets-P3/scss/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/92f9a50f4f.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -18,20 +18,20 @@
 </head>
 
 <body> <!--Homepage-->
-    <header>
-        <img id="logo" src="assets-P3/images/logo/ohmyfood.svg" alt="logo de Oh my food" />   
+    <header class="header">
+        <img class="header__logo" src="assets-P3/images/logo/ohmyfood.svg" alt="logo de Oh my food" />   
     </header>
 
-    <div class="location">
-        <span class="location__icon"><i class="fas fa-map-marker-alt"></i></span>
-        <input  class="location__input" type="text" name="chosen location" placeholder="Saisissez votre location" value="Paris, Belleville" />
-    </div>
-
     <main>
+        <div class="location">
+            <span class="location__icon"><i class="fas fa-map-marker-alt"></i></span>
+            <input  class="location__input" type="text" name="chosen location" placeholder="Saisissez votre location" value="Paris, Belleville" />
+        </div>
+
         <section class="explore"><!--explore restaurants-->
-            <h2 class="texte-font">Réservez le menu qui vous convient</h2>
-            <p class="texte-font">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button type="submit" class="explore__btn">Explorer nos restaurants</button>
+            <h2 class="explore__heading texte-font">Réservez le menu qui vous convient</h2>
+            <p class="explore__p texte-font">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <button type="submit" class="btn">Explorer nos restaurants</button>
         </section>
         <section class="fonction"><!--how the site works-->
             <h2 class="texte-font">Fonctionnement</h2>
@@ -41,12 +41,12 @@
                 <li class="texte-font"><span class="numbers">3</span><span class="fonction-icon"><i class="fas fa-store"></i></span>Dégustez au restaurant</li>
             </ul>
         </section>
-        <section class="restaurants">
+        <section class="restaurants"><!--list of restaurants-->
             <h2 class="texte-font">Restaurants</h2>
             <div><!--englobes all of the restaurants block-->
-                <a href="#" class="restaurants__block"><!--Menilmontant-->
+                <a href="page3.html" class="restaurants__block"><!--La palette du gout-->
                     <div class="restaurants__palette-gout"
-                        title="Restaurant La Peltte du Gout"> <!--picture div-->
+                        title="Restaurant La Paltte du Gout"> <!--picture div-->
                     </div>
                     <div class="new texte-font">Nouveau</div><!--new block on picture-->
                     <div>
@@ -55,7 +55,7 @@
                     </div>
                     <span class="heart"><i class="far fa-heart"></i></span>
                 </a>
-                <a href="#" class="restaurants__block"><!--Charonne-->
+                <a href="page2.html" class="restaurants__block"><!--La note enchantée-->
                     <div class="restaurants__note-enchante"
                         title="Restaurant La note enchantée"> 
                     </div>
@@ -66,7 +66,7 @@
                     </div>
                     <span class="heart"><i class="far fa-heart"></i></span>
                 </a>
-                <a href="#" class="restaurants__block"><!--cite rouge-->
+                <a href="page1.html" class="restaurants__block"><!--A la française-->
                     <div class="restaurants__francaise"
                         title="Restaurant A la Française"> 
                     </div>
@@ -77,7 +77,7 @@
                     </div>
                     <span class="heart"><i class="far fa-heart"></i></span>
                 </a>
-                <a href="#" class="restaurants__block"><!--folie-mericourt-->
+                <a href="page4.html" class="restaurants__block"><!--La délice des sens-->
                     <div class="restaurants__delice"
                         title="Restaurant Le délice des sens"> 
                     </div>
