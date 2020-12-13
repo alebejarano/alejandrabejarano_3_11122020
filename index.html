@@ -5,7 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ohmyfood est une enteprise de commande de repas en ligne" />
-    <title>Ohmyfood</title>    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92f9a50f4f.js" crossorigin="anonymous"></script>
+    <title>Ohmyfood</title>
 </head>
 
 <body> <!--Homepage-->
@@ -14,26 +18,26 @@
     </header>
 
     <div class="location">
-        <div class="location__icon"><i class="fas fa-map-marker-alt"></i></div>
+        <span class="location__icon"><i class="fas fa-map-marker-alt"></i></span>
         <input  class="location__input" type="text" name="chosen location" placeholder="Saisissez votre location" value="Paris, Belleville" />
     </div>
 
     <main>
         <section class="explore"><!--explore restaurants-->
-            <h2>Réservez le menu qui vous convient</h4>
-            <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
+            <h2 class="title-font">Réservez le menu qui vous convient</h4>
+            <h3 class="title-font">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
             <button type="submit" class="explore__btn">Explorer nos restaurants</button>
         </section>
         <section class="fonction"><!--how the site works-->
-            <h2>Fonctionnement</h2>
+            <h2 class="title-font">Fonctionnement</h2>
             <ul class="fonction__list">
-                <li><span class="numbers">1</span><span class="fonction-icon"><i class="fas fa-mobile-alt"></i></span>Choisissezun restaurant</li>
-                <li><span class="numbers">2</span class="fonction-icon"><span><i class="fas fa-list-ul"></i></span>Composez votre menu</li>
-                <li><span class="numbers">3</span><span class="fonction-icon"><i class="fas fa-store"></i></span>Dégustez au restaurant</li>
+                <li class="texte-font"><span class="numbers">1</span><span class="fonction-icon"><i class="fas fa-mobile-alt"></i></span>Choisissezun restaurant</li>
+                <li class="texte-font"><span class="numbers">2</span class="fonction-icon"><span><i class="fas fa-list-ul"></i></span>Composez votre menu</li>
+                <li class="texte-font"><span class="numbers">3</span><span class="fonction-icon"><i class="fas fa-store"></i></span>Dégustez au restaurant</li>
             </ul>
         </section>
         <section class="restaurants">
-            <h2>Restaurants</h2>
+            <h2 class="title-font">Restaurants</h2>
             <div><!--englobes all of the restaurants block-->
                 <a href="#" class="restaurants__block"><!--Menilmontant-->
                     <div class="restaurants__palette-gout"
@@ -41,8 +45,8 @@
                     </div>
                     <div class="new">Nouveau</div><!--new block on picture-->
                     <div>
-                        <h4>La palette du goût</h4>
-                        <p>Ménilmont</p>
+                        <h4 class="title-font">La palette du goût</h4>
+                        <p class="texte-font">Ménilmont</p>
                     </div>
                     <span class="heart"><i class="far fa-heart"></i></span>
                 </a>
@@ -52,8 +56,8 @@
                     </div>
                     <div class="new">Nouveau</div>
                     <div>
-                        <h4>La note enchantée</h4>
-                        <p>Charonne</p>
+                        <h4 class="title-font">La note enchantée</h4>
+                        <p class="texte-font">Charonne</p>
                     </div>
                     <span class="heart"><i class="far fa-heart"></i></span>
                 </a>
@@ -63,8 +67,8 @@
                     </div>
                     <div class="new">Nouveau</div>
                     <div>
-                        <h4>À la Française</h4>
-                        <p>Cité Rouge</p>
+                        <h4 class="title-font">À la Française</h4>
+                        <p class="texte-font">Cité Rouge</p>
                     </div>
                     <span class="heart"><i class="far fa-heart"></i></span>
                 </a>
@@ -74,26 +78,24 @@
                     </div>
                     <div class="new">Nouveau</div>
                     <div>
-                        <h4>Le délice des sens</h4>
-                        <p>Folie-Méricourt</p>
+                        <h4 class="title-font">Le délice des sens</h4>
+                        <p class="texte-font">Folie-Méricourt</p>
                     </div>
                     <span class="heart"><i class="far fa-heart"></i></span>
                 </a>
             </div>
         </section>
-
-        <footer>
-            <img id="footer__logo" src="assets-P3/images/logo/ohmyfood.png"/>
-            <ul>
-                <li><a href="#"><span class="footer__icon"><i class="fas fa-utensils"></i></span>Proposer un restaurant</a></li>
-                <li><a href="#"><span class="footer__icon"><i class="fas fa-hands-helping"></i></span>Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </footer>
     </main>
+
+    <footer>
+        <h2 class="title-font">Ohmyfood</h2>
+        <ul>
+            <li class="texte-font"><a href="#"><span class="footer__icon"><i class="fas fa-utensils"></i></span>Proposer un restaurant</a></li>
+            <li class="texte-font"><a href="#"><span class="footer__icon"><i class="fas fa-hands-helping"></i></span>Devenir partenaire</a></li>
+            <li class="texte-font"><a href="#">Mentions légales</a></li>
+            <li class="texte-font"><a href="#">Contact</a></li>
+        </ul>
+    </footer>
 </body>
 
-   
 </html>
-
