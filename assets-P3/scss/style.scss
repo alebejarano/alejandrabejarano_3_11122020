@@ -1,5 +1,4 @@
-$title-font: 'Shrikhand', cursive;
-$texte-font: 'Roboto', sans-serif;
+@import "./variables";
 
 .title-font {
     font-family: $title-font;
