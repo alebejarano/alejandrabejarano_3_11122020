@@ -3,3 +3,7 @@
     margin: auto;
     padding: 15px;
 }
+@mixin a-style {
+    text-decoration: none;
+    color: $normal-link;
+}
