@@ -6,12 +6,14 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $normal-link: black;
 $gardient-btn: linear-gradient(352deg,#9356dc 0%, #ff79da 80%);
+$footer-backColor: #353535;
 $section-backColor: #f6f6f6;
 $input-backColor: #eaeaea;
 $shadow: darken($input-backColor , 10% );
 
 $font-sizes: (
-    "xs": 0.7em,
+    "xxs": 0.7em,
+    "xs": 0.8em,
     "small": 0.9em,
     "normal": 1em,
     "heading2": 1.5em

@@ -89,12 +89,13 @@ section {
 }
 
 .function__list .function-item {
+  height: 25px;
   border: 2px solid transparent;
   padding: 15px;
   border-radius: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  margin: 15px 0;
+  margin: 20px 0;
   font-size: 0.9em;
   background-color: #f6f6f6;
   -webkit-box-shadow: 6px 8px 15px -6px #d1d1d1;
@@ -126,8 +127,9 @@ section {
 }
 
 .function__list .function-icon {
-  margin: 10px;
+  margin: 15px 20px;
   color: #7e7e7e;
+  font-size: 1.2em;
 }
 
 .restaurants {
@@ -173,7 +175,9 @@ section {
   top: 15px;
   right: 15px;
   background-color: #99E2D0;
-  padding: 5px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 0.8em;
 }
 
 .restaurants .heart {
@@ -195,5 +199,23 @@ section {
 
 .delice {
   background-image: url(../images/restaurants/le-delices.jpg);
+}
+
+.footer {
+  background-color: #353535;
+  padding: 15px;
+}
+
+.footer__list {
+  list-style-type: none;
+}
+
+.footer__heading {
+  color: white;
+}
+
+.footer .footer-li {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

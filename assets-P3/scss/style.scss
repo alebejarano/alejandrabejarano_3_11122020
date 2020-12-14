@@ -73,12 +73,13 @@ section {
     margin: auto;
     padding: 0;
     .function-item {
+        height: 25px;
         border: 2px solid transparent;
         padding: 15px;
         border-radius: 17px;
         font-family: $texte-font;
         font-weight: map-get($font-weights, bold );
-        margin: 15px 0;
+        margin: 20px 0;
         font-size: map-get($font-sizes, small );
         background-color: $section-backColor;
         box-shadow: 6px 8px 15px -6px $shadow;
@@ -103,11 +104,12 @@ section {
         line-height: 2;
         text-align: center;
         transform: translate(-4px, -1px);
-        font-size: map-get($font-sizes, xs );
+        font-size: map-get($font-sizes, xxs );
     }
     .function-icon {
-        margin: 10px;
+        margin: 15px 20px;
         color: #7e7e7e;
+        font-size: 1.2em;
     }
 }
 .restaurants {
@@ -120,7 +122,7 @@ section {
         background-color: white;
         display: block;
         position: relative;
-        @include a-style;
+        @include a-style($normal-link);
     }
     &__pic {
         background-size: cover;
@@ -144,7 +146,9 @@ section {
         top: 15px;
         right: 15px;
         background-color: $tertiary-color;
-        padding: 5px;
+        padding: 5px 10px;
+        border-radius: 2px;
+        font-size: map-get($font-sizes, xs );
     }
     .heart {
         float: right;
@@ -163,4 +167,17 @@ section {
 }
 .delice {
     background-image: url(../images/restaurants/le-delices.jpg);
+}
+.footer {
+    background-color: $footer-backColor;
+    padding: 15px;
+    &__list {
+        list-style-type: none;
+    }
+    &__heading {
+        color: white;
+    }
+    .footer-li {
+        @include a-style(white);
+    }
 }
