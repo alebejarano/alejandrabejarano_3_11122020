@@ -8,8 +8,7 @@ $normal-link: black;
 $gardient-btn: linear-gradient(352deg,#9356dc 0%, #ff79da 80%);
 $section-backColor: #f6f6f6;
 $input-backColor: #eaeaea;
-$input-shadow: #bebdbd;
-$boxes-shadow: #cfcfcf;
+$shadow: darken($input-backColor , 10% );
 
 $font-sizes: (
     "xs": 0.7em,

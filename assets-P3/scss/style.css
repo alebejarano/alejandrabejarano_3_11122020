@@ -37,8 +37,8 @@ section {
   line-height: 40px;
   color: #353535;
   font-size: 1em;
-  -webkit-box-shadow: 1px 1px 3px -1px #bebdbd inset;
-          box-shadow: 1px 1px 3px -1px #bebdbd inset;
+  -webkit-box-shadow: 1px 1px 3px -1px #d1d1d1 inset;
+          box-shadow: 1px 1px 3px -1px #d1d1d1 inset;
 }
 
 .location__icon {
@@ -75,8 +75,8 @@ section {
   color: white;
   font-size: 0.9em;
   outline: none;
-  -webkit-box-shadow: 6px 15px 5px -12px #cfcfcf;
-          box-shadow: 6px 15px 5px -12px #cfcfcf;
+  -webkit-box-shadow: 6px 15px 5px -12px #d1d1d1;
+          box-shadow: 6px 15px 5px -12px #d1d1d1;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -97,8 +97,16 @@ section {
   margin: 15px 0;
   font-size: 0.9em;
   background-color: #f6f6f6;
-  -webkit-box-shadow: 6px 8px 15px -6px #cfcfcf;
-          box-shadow: 6px 8px 15px -6px #cfcfcf;
+  -webkit-box-shadow: 6px 8px 15px -6px #d1d1d1;
+          box-shadow: 6px 8px 15px -6px #d1d1d1;
+}
+
+.function__list .function-item:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+
+.function__list .function-item:hover .function-icon {
+  color: #9356DC;
 }
 
 .function__list .numbers {
@@ -120,5 +128,52 @@ section {
 .function__list .function-icon {
   margin: 10px;
   color: #7e7e7e;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+
+.restaurants__block {
+  /* border-radius: 15px;
+        padding: 5px;
+        margin: 10px 0;
+        width: 100%;
+        box-shadow: 0px 0px 4px 0px #d9d9d9;*/
+  display: block;
+  position: relative;
+}
+
+.restaurants__pic {
+  background-size: cover;
+  min-width: 40%;
+  min-height: 150px;
+  background-position: center center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.restaurants .new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99E2D0;
+  padding: 5px;
+}
+
+.palette-gout {
+  background-image: url(../images/restaurants/la-palette.jpg);
+}
+
+.note-enchante {
+  background-image: url(../images/restaurants/note-enchante.jpg);
+}
+
+.francaise {
+  background-image: url(../images/restaurants/la-francaise.jpg);
+}
+
+.delice {
+  background-image: url(../images/restaurants/le-delices.jpg);
 }
 /*# sourceMappingURL=style.css.map */
