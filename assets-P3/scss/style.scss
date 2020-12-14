@@ -27,31 +27,31 @@ section {
 }
 .location {
     width: 100%;
-    background-color: #eaeaea;
+    background-color: $input-backColor;
     height: 40px;
     text-align: center;
     line-height: 40px;
     color: #353535;
-    font-size: 1em;
-    box-shadow:  1px 1px 3px -1px #bebdbd inset;
+    font-size: map-get($font-sizes , normal );
+    box-shadow:  1px 1px 3px -1px $input-shadow inset;
     &__icon {
         margin: 0 5px;
     }
     &__input {
     outline: none;
     border: none;
-    background-color: #eaeaea;
+    background-color: $input-backColor;
     }
 }
 .explore {
-    background-color: #f6f6f6;
+    background-color: $section-backColor;
     &__heading {
         text-align: center;
-        font-size: $h2-homepage;
+        font-size: map-get($font-sizes , heading2);
     }
     &__p {
         text-align: center;
-        font-weight: 100;
+        font-weight: map-get($font-weights, thin );
     }
 }
 .btn {
@@ -62,9 +62,47 @@ section {
     background: $gardient-btn;
     border: none;
     color: white;
-    font-size: 0.9em;
+    font-size: map-get($font-sizes , small);
     outline: none;
-    box-shadow: 6px 15px 5px -12px #cfcfcf;
+    box-shadow: 6px 15px 5px -12px $boxes-shadow;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+.function__list {
+    list-style-type: none;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    .function-item {
+        border: 2px solid transparent;
+        padding: 15px;
+        border-radius: 17px;
+        font-family: $texte-font;
+        font-weight: map-get($font-weights, bold );
+        margin: 15px 0;
+        font-size: map-get($font-sizes, small );
+        background-color: $section-backColor;
+        box-shadow: 6px 8px 15px -6px $boxes-shadow;
+    }
+    &:hover {
+        
+    }
+    .numbers {
+        position: absolute;
+        left: 25px;
+        border: 2px solid transparent;
+        background-color: $primary-color;
+        color: white;
+        height: 18px;
+        width: 18px;
+        border-radius: 10px;
+        line-height: 2;
+        text-align: center;
+        transform: translate(-4px, -1px);
+        font-size: map-get($font-sizes, xs );
+    }
+    .function-icon {
+        margin: 10px;
+        color: #7e7e7e;
+    }
 }
