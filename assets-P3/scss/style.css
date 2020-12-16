@@ -12,7 +12,7 @@ section {
   font-family: "Shrikhand", cursive;
 }
 
-.texte-font {
+.texte-font, .price {
   font-family: "Roboto", sans-serif;
 }
 
@@ -142,8 +142,8 @@ section {
   border-radius: 15px;
   margin: 20px 0;
   width: 100%;
-  -webkit-box-shadow: 0px 0px 4px 0px #d9d9d9;
-          box-shadow: 0px 0px 4px 0px #d9d9d9;
+  -webkit-box-shadow: 0px 0px 4px 0px #d1d1d1;
+          box-shadow: 0px 0px 4px 0px #d1d1d1;
   background-color: white;
   display: block;
   position: relative;
@@ -247,6 +247,7 @@ section {
 /*background images of the menus*/
 .menu {
   padding: 0;
+  background-color: #f6f6f6;
 }
 
 .menu__picture {
@@ -259,9 +260,10 @@ section {
 .menu__text {
   position: relative;
   top: -53px;
-  background-color: white;
+  background-color: #f6f6f6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  padding: 15px 20px;
 }
 
 .menu__text h4 {
@@ -291,6 +293,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  letter-spacing: 0.02em;
 }
 
 .menu .heart {
@@ -298,5 +301,34 @@ section {
   margin: 20px;
   font-size: 1.35em;
   line-height: 2;
+}
+
+.menu .meal-choice {
+  background-color: white;
+  -webkit-box-shadow: 1px 2px 6px 2px #d1d1d1;
+          box-shadow: 1px 2px 6px 2px #d1d1d1;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.menu .meal-choice .price {
+  float: right;
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 15px;
+  -webkit-transform: translate(5px, 15px);
+          transform: translate(5px, 15px);
+}
+
+.menu .meal-choice h5 {
+  font-size: 1em;
+  margin: 5px;
+}
+
+.menu .meal-choice p {
+  font-weight: 100;
+  font-size: 0.9em;
+  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */
