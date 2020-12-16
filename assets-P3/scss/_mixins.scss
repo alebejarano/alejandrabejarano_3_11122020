@@ -1,9 +1,9 @@
-@mixin logo-position {
-    display: block;
-    margin: auto;
-    padding: 15px;
-}
 @mixin a-style($color) {
     text-decoration: none;
     color: $color;
+}
+@mixin hearts {
+    float: right;
+    margin: 20px;
+    font-size: 1.35em;
 }

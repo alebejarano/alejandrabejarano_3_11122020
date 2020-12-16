@@ -16,12 +16,16 @@ section {
 }
 .header {
     &__logo {
-        @include logo-position;
+        display: block;
+        margin: auto;
+        padding: 15px 15px 10px 15px;
     }
     &__arrow {
         position: absolute;
-        line-height: 4;
+        line-height: 3.5;
+        padding: 0 20px;
         @include a-style(black);
+        font-size: 1.2em;
     }
 }
 .location {
@@ -154,9 +158,7 @@ section {
         font-weight: map-get($font-weights, bold );
     }
     .heart {
-        float: right;
-        margin: 20px;
-        font-size: 1.35em;
+        @include hearts;
     }
 }
 
@@ -172,6 +174,7 @@ section {
 .delice {
     background-image: url(../images/restaurants/le-delices.jpg);
 }
+/* Footer section - same footer style for all pages*/
 .footer {
     background-color: $footer-backColor;
     padding: 15px 15px 25px 20px;
@@ -198,5 +201,46 @@ section {
     }
     .footer-icon {
         margin-right: 10px;
+    }
+}
+/*background images of the menus*/
+.menu {
+    padding: 0;
+    &__picture {
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 260px;
+        }
+    &__text {
+        position: relative;
+        top: -53px;
+        background-color: white;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        h4 {
+            font-weight: map-get($font-weights, thin );
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                left    : 0;
+                bottom  : -3px;
+                /*height  : 1px;*/
+                width: 12%;
+                border-bottom: 2px solid $tertiary-color;
+            }
+        }
+    }
+    .menu-heading {
+        display: inline-flex;
+        display: inline-flex;
+        align-items: baseline;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .heart {
+        @include hearts;
+        line-height: 2;
     }
 }
