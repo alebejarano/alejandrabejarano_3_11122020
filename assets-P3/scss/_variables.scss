@@ -4,7 +4,6 @@ $texte-font: 'Roboto', sans-serif;
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-$normal-link: black;
 $gardient-btn: linear-gradient(352deg,#9356dc 0%, #ff79da 80%);
 $footer-backColor: #353535;
 $section-backColor: #f6f6f6;
@@ -16,6 +15,7 @@ $font-sizes: (
     "xs": 0.8em,
     "small": 0.9em,
     "normal": 1em,
+    "heading4": 1.2em,
     "heading2": 1.5em
 );
 $font-weights: (

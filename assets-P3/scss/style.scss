@@ -21,7 +21,7 @@ section {
     &__arrow {
         position: absolute;
         line-height: 4;
-        @include a-style;
+        @include a-style(black);
     }
 }
 .location {
@@ -122,7 +122,7 @@ section {
         background-color: white;
         display: block;
         position: relative;
-        @include a-style($normal-link);
+        @include a-style(black);
     }
     &__pic {
         background-size: cover;
@@ -176,6 +176,8 @@ section {
     }
     &__heading {
         color: white;
+        letter-spacing: 0.02em;
+        font-size: map-get($font-sizes, heading4 );
     }
     .footer-li {
         @include a-style(white);

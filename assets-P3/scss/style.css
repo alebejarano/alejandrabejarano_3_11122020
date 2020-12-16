@@ -212,10 +212,12 @@ section {
 
 .footer__heading {
   color: white;
+  letter-spacing: 0.02em;
+  font-size: 1.2em;
 }
 
 .footer .footer-li {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
