@@ -93,7 +93,7 @@ section {
 
 .btn--size {
   width: 50%;
-  margin: 15px auto;
+  margin: 30px auto;
 }
 
 .btn:hover {
@@ -158,9 +158,14 @@ section {
 
 .restaurants {
   background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 
-.restaurants__block {
+.restaurants__list__block {
+  position: relative;
+}
+
+.restaurants__anchor {
   border-radius: 15px;
   margin: 20px 0;
   width: 100%;
@@ -211,6 +216,22 @@ section {
   float: right;
   margin: 20px;
   font-size: 1.35em;
+  text-decoration: none;
+  color: black;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+}
+
+.restaurants .heart:active {
+  background-color: linear-gradient(352deg, #9356dc 0%, #ff79da 80%);
+  -webkit-animation-name: fill-in;
+          animation-name: fill-in;
 }
 
 .palette-gout {
