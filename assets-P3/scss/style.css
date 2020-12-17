@@ -71,7 +71,6 @@ section {
   border-radius: 20px;
   padding: 13px;
   display: block;
-  margin: auto;
   background: linear-gradient(352deg, #9356dc 0%, #ff79da 80%);
   border: none;
   color: white;
@@ -79,8 +78,13 @@ section {
   outline: none;
   -webkit-box-shadow: 6px 15px 5px -12px #d1d1d1;
           box-shadow: 6px 15px 5px -12px #d1d1d1;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  cursor: pointer;
+  margin: 25px auto;
+}
+
+.btn--size {
+  width: 45%;
+  margin: 0 auto;
 }
 
 .function__list {
@@ -263,7 +267,7 @@ section {
   background-color: #f6f6f6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  padding: 15px 20px;
+  padding: 15px 20px 0 15px;
 }
 
 .menu__text h4 {
@@ -293,7 +297,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 .menu .heart {
@@ -301,6 +305,10 @@ section {
   margin: 20px;
   font-size: 1.35em;
   line-height: 2;
+}
+
+.menu .starters, .menu .main-dishes, .menu .desserts {
+  margin: 40px 0;
 }
 
 .menu .meal-choice {

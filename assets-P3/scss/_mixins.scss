@@ -7,3 +7,15 @@
     margin: 20px;
     font-size: 1.35em;
 }
+@mixin btn {
+    border-radius: 20px;
+    padding: 13px;
+    display: block;
+    background: $gardient-btn;
+    border: none;
+    color: white;
+    font-size: map-get($font-sizes , small);
+    outline: none;
+    box-shadow: 6px 15px 5px -12px $shadow;
+    cursor: pointer; 
+}
