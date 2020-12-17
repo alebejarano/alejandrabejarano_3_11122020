@@ -262,10 +262,11 @@ section {
         width: 100%;
         justify-content: space-between;
         letter-spacing: 0.04em;
-    }
-    .heart {
-        @include hearts;
-        line-height: 2;
+        .heart {
+            @include hearts;
+            @include a-style(black);
+            line-height: 2;
+        }
     }
     .starters, .main-dishes, .desserts {
         margin: 40px 0;

@@ -338,10 +338,12 @@ section {
   letter-spacing: 0.04em;
 }
 
-.menu .heart {
+.menu .menu-heading .heart {
   float: right;
   margin: 20px;
   font-size: 1.35em;
+  text-decoration: none;
+  color: black;
   line-height: 2;
 }
 
