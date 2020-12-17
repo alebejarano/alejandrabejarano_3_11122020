@@ -5,6 +5,9 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+.body__menu {
+    background-color: $section-backColor;
+}
 section {
     padding: 30px 20px;
 }
@@ -15,6 +18,7 @@ section {
     font-family: $texte-font;
 }
 .header {
+    background-color: white;
     &__logo {
         display: block;
         margin: auto;
@@ -60,10 +64,16 @@ section {
 .btn {
     @include btn;
     margin:  25px auto;
+    width: 60%;
     &--size {
-        width: 45%;
-        margin: 0 auto;
+        width: 50%;
+        margin: 15px auto;
     }
+    &:hover {
+        background: linear-gradient(to right bottom, lighten($primary-color, 5), lighten($secondary-color, 5));
+        box-shadow: 1px 3px 6px 2px $darker-shadow;
+    }
+
 }
 .function__list {
     list-style-type: none;
@@ -80,9 +90,10 @@ section {
         margin: 20px 0;
         font-size: map-get($font-sizes, small );
         background-color: $section-backColor;
-        box-shadow: 6px 8px 15px -6px $shadow;
+        box-shadow: $block-shadow $shadow;
             &:hover {
                 background-color: rgba($primary-color, .1);
+                box-shadow: $block-shadow $darker-shadow;
                 }
             &:hover {
                 & .function-icon {
@@ -116,7 +127,7 @@ section {
         border-radius: 15px;
         margin: 20px 0;
         width: 100%;
-        box-shadow: $block-shadow;
+        box-shadow: $block-shadow $shadow;
         background-color: white;
         display: block;
         position: relative;
@@ -221,10 +232,9 @@ section {
                 position: absolute;
                 content: "";
                 left    : 0;
-                bottom  : -3px;
-                /*height  : 1px;*/
-                width: 12%;
-                border-bottom: 2px solid $tertiary-color;
+                bottom  : -7px;
+                width: 11.5%;
+                border-bottom: 3px solid $tertiary-color;
             }
         }
     }
@@ -245,7 +255,7 @@ section {
     }    
     .meal-choice {
         background-color: white;
-        box-shadow: $block-shadow;
+        box-shadow: $block-shadow $shadow;
         padding: 5px;
         margin-bottom: 15px;
         border-radius: 15px;

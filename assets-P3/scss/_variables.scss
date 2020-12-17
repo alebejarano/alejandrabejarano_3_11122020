@@ -8,8 +8,9 @@ $gardient-btn: linear-gradient(352deg,#9356dc 0%, #ff79da 80%);
 $footer-backColor: #353535;
 $section-backColor: #f6f6f6;
 $input-backColor: #eaeaea;
-$block-shadow: box-shadow (0px 0px 4px 0px $shadow);
+$block-shadow: (6px 8px 15px -6px);
 $shadow: darken($input-backColor , 10% );
+$darker-shadow: darken($input-backColor, 20% );
 
 $font-sizes: (
     "xxs": 0.7em,

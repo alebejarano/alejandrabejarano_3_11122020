@@ -4,6 +4,10 @@ body {
           box-sizing: border-box;
 }
 
+.body__menu {
+  background-color: #f6f6f6;
+}
+
 section {
   padding: 30px 20px;
 }
@@ -14,6 +18,10 @@ section {
 
 .texte-font, .price {
   font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: white;
 }
 
 .header__logo {
@@ -76,15 +84,23 @@ section {
   color: white;
   font-size: 0.9em;
   outline: none;
-  -webkit-box-shadow: 6px 15px 5px -12px #d1d1d1;
-          box-shadow: 6px 15px 5px -12px #d1d1d1;
+  -webkit-box-shadow: 1px 3px 6px 2px #d1d1d1;
+          box-shadow: 1px 3px 6px 2px #d1d1d1;
   cursor: pointer;
   margin: 25px auto;
+  width: 60%;
 }
 
 .btn--size {
-  width: 45%;
-  margin: 0 auto;
+  width: 50%;
+  margin: 15px auto;
+}
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(#a16be0), to(#ff93e1));
+  background: linear-gradient(to right bottom, #a16be0, #ff93e1);
+  -webkit-box-shadow: 1px 3px 6px 2px #b7b7b7;
+          box-shadow: 1px 3px 6px 2px #b7b7b7;
 }
 
 .function__list {
@@ -110,6 +126,8 @@ section {
 
 .function__list .function-item:hover {
   background-color: rgba(147, 86, 220, 0.1);
+  -webkit-box-shadow: 6px 8px 15px -6px #b7b7b7;
+          box-shadow: 6px 8px 15px -6px #b7b7b7;
 }
 
 .function__list .function-item:hover .function-icon {
@@ -146,8 +164,8 @@ section {
   border-radius: 15px;
   margin: 20px 0;
   width: 100%;
-  -webkit-box-shadow: 0px 0px 4px 0px #d1d1d1;
-          box-shadow: 0px 0px 4px 0px #d1d1d1;
+  -webkit-box-shadow: 6px 8px 15px -6px #d1d1d1;
+          box-shadow: 6px 8px 15px -6px #d1d1d1;
   background-color: white;
   display: block;
   position: relative;
@@ -279,10 +297,9 @@ section {
   position: absolute;
   content: "";
   left: 0;
-  bottom: -3px;
-  /*height  : 1px;*/
-  width: 12%;
-  border-bottom: 2px solid #99E2D0;
+  bottom: -7px;
+  width: 11.5%;
+  border-bottom: 3px solid #99E2D0;
 }
 
 .menu .menu-heading {
@@ -313,8 +330,8 @@ section {
 
 .menu .meal-choice {
   background-color: white;
-  -webkit-box-shadow: 1px 2px 6px 2px #d1d1d1;
-          box-shadow: 1px 2px 6px 2px #d1d1d1;
+  -webkit-box-shadow: 6px 8px 15px -6px #d1d1d1;
+          box-shadow: 6px 8px 15px -6px #d1d1d1;
   padding: 5px;
   margin-bottom: 15px;
   border-radius: 15px;
@@ -322,11 +339,11 @@ section {
 
 .menu .meal-choice .price {
   float: right;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 500;
   padding: 15px;
-  -webkit-transform: translate(5px, 15px);
-          transform: translate(5px, 15px);
+  -webkit-transform: translate(0px, 18px);
+          transform: translate(0px, 18px);
 }
 
 .menu .meal-choice h5 {
