@@ -116,7 +116,7 @@ section {
         border-radius: 15px;
         margin: 20px 0;
         width: 100%;
-        box-shadow: 0px 0px 4px 0px $shadow;
+        box-shadow: $block-shadow;
         background-color: white;
         display: block;
         position: relative;
@@ -245,16 +245,16 @@ section {
     }    
     .meal-choice {
         background-color: white;
-        box-shadow: 1px 2px 6px 2px $shadow;
+        box-shadow: $block-shadow;
         padding: 5px;
         margin-bottom: 15px;
         border-radius: 15px;
         .price {
             float: right;
-            font-size: map-get($font-sizes, xs );
+            font-size: map-get($font-sizes, small );
             font-weight: map-get($font-weights, bold );
             padding: 15px;
-            transform: translate(5px, 15px);
+            transform: translate(0px, 18px);
         }
         h5 {
             font-size: map-get($font-sizes, normal );
