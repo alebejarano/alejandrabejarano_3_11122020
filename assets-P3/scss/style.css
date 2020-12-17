@@ -229,7 +229,7 @@ section {
 }
 
 .restaurants .heart:active {
-  background-color: linear-gradient(352deg, #9356dc 0%, #ff79da 80%);
+  background-color: #9356DC;
   -webkit-animation-name: fill-in;
           animation-name: fill-in;
 }

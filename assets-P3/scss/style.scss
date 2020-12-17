@@ -178,7 +178,7 @@ section {
         right: 0;
         bottom: 7px;
         &:active {
-            background-color: $gardient-btn;
+            background-color: $primary-color;
             animation-name: fill-in;
         }
     }
