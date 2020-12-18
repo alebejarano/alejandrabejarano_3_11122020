@@ -1,3 +1,29 @@
+@-webkit-keyframes fill-in {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    color: #9356DC;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    color: #FF79DA;
+  }
+}
+
+@keyframes fill-in {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    color: #9356DC;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    color: #FF79DA;
+  }
+}
+
 body {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -332,7 +358,6 @@ i.fa .fa-heart:active {
 .menu .menu-heading {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex;
   display: inline-flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
