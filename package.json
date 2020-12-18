@@ -1,0 +1,26 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassrooms Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alebejarano/alejandrabejarano_3_11122020.git"
+  },
+  "keywords": [
+    "p3",
+    "ohmyfood"
+  ],
+  "author": "Alejandra Bejarano Alarcon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alebejarano/alejandrabejarano_3_11122020/issues"
+  },
+  "homepage": "https://github.com/alebejarano/alejandrabejarano_3_11122020#readme",
+  "dependencies": {
+    "sass": "^1.30.0"
+  }
+}

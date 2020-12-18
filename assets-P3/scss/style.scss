@@ -169,20 +169,21 @@ section {
     .heart {
         @include hearts;
         @include a-style(black);
-        border: none;
-        background-color: transparent;
-        outline: none;
-        cursor: pointer;
         z-index: 2;
         position: absolute;
         right: 0;
         bottom: 7px;
-        &:active {
-            background-color: $primary-color;
-            animation-name: fill-in;
+        &--check {
+            bottom: 12px;
+            right: 4px;
+            opacity: 0
         }
     }
 }    
+i.fa .fa-heart:active {
+    background-color: $primary-color;
+    /*animation: fill-in .4s ease-in;*/
+}
 
 .palette-gout {
     background-image: url(../images/restaurants/la-palette.jpg);

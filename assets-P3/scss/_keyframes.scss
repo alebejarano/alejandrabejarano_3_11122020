@@ -1,8 +1,10 @@
 @keyframes fill-in {
     0% {
         transform: scaleY(0);
+        color: $primary-color;
     }
     100% {
         transform: scaleY(1);
+        color: $secondary-color;
     }
 }

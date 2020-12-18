@@ -215,23 +215,29 @@ section {
 .restaurants .heart {
   float: right;
   margin: 20px;
-  font-size: 1.35em;
-  text-decoration: none;
-  color: black;
+  width: 1.3em;
+  height: 1.4em;
   border: none;
-  background-color: transparent;
+  background: none;
   outline: none;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
   z-index: 2;
   position: absolute;
   right: 0;
   bottom: 7px;
 }
 
-.restaurants .heart:active {
+.restaurants .heart--check {
+  bottom: 12px;
+  right: 4px;
+  opacity: 0;
+}
+
+i.fa .fa-heart:active {
   background-color: #9356DC;
-  -webkit-animation-name: fill-in;
-          animation-name: fill-in;
+  /*animation: fill-in .4s ease-in;*/
 }
 
 .palette-gout {
@@ -341,7 +347,12 @@ section {
 .menu .menu-heading .heart {
   float: right;
   margin: 20px;
-  font-size: 1.35em;
+  width: 1.3em;
+  height: 1.4em;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
   text-decoration: none;
   color: black;
   line-height: 2;
