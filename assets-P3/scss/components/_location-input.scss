@@ -1,0 +1,18 @@
+.location {
+    width: 100%;
+    background-color: $input-backColor;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #353535;
+    font-size: map-get($font-sizes , normal );
+    box-shadow:  1px 1px 3px -1px $shadow inset;
+    &__icon {
+        margin: 0 5px;
+    }
+    &__input {
+    outline: none;
+    border: none;
+    background-color: $input-backColor;
+    }
+}

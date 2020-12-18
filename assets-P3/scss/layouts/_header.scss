@@ -1,0 +1,15 @@
+.header {
+    background-color: white;
+    &__logo {
+        display: block;
+        margin: auto;
+        padding: 15px 15px 10px 15px;
+    }
+    &__arrow {
+        position: absolute;
+        line-height: 3.5;
+        padding: 0 20px;
+        @include a-style(black);
+        font-size: 1.2em;
+    }
+}

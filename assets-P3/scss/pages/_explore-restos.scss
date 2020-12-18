@@ -1,0 +1,11 @@
+.explore {
+    background-color: $section-backColor;
+    &__heading {
+        text-align: center;
+        font-size: map-get($font-sizes , heading2);
+    }
+    &__p {
+        text-align: center;
+        font-weight: map-get($font-weights, thin );
+    }
+}

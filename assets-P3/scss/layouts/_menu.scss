@@ -1,0 +1,67 @@
+.menu {
+    padding: 0;
+    background-color: $section-backColor;
+    &__picture {
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 260px;
+        }
+    &__text {
+        position: relative;
+        top: -53px;
+        background-color: $section-backColor;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        padding: 15px 20px 0 15px;
+        h4 {
+            font-weight: map-get($font-weights, thin );
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                left    : 0;
+                bottom  : -7px;
+                width: 11.5%;
+                border-bottom: 3px solid $tertiary-color;
+            }
+        }
+    }
+    .menu-heading {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        letter-spacing: 0.04em;
+        .heart {
+            @include hearts;
+            @include a-style(black);
+        }
+    }
+    .starters, .main-dishes, .desserts {
+        margin: 40px 0;
+    }    
+    .meal-choice {
+        background-color: white;
+        box-shadow: $block-shadow $shadow;
+        padding: 5px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        .price {
+            float: right;
+            font-size: map-get($font-sizes, small );
+            font-weight: map-get($font-weights, bold );
+            padding: 15px;
+            transform: translate(0px, 18px);
+        }
+        h5 {
+            font-size: map-get($font-sizes, normal );
+            margin: 5px;
+        }
+        p {
+            font-weight: map-get($font-weights, thin );
+            font-size: map-get($font-sizes, small );
+            margin: 5px;
+        }
+    }
+}

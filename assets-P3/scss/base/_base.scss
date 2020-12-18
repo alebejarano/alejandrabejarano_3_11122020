@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+.body__menu {
+    background-color: $section-backColor;
+}
+section {
+    padding: 30px 20px;
+}
+.title-font {
+    font-family: $title-font;
+}
+.texte-font, .price {
+    font-family: $texte-font;
+}

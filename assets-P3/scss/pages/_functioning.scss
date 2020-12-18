@@ -1,0 +1,46 @@
+.function__list {
+    list-style-type: none;
+    width: 90%;
+    margin: 10px;
+    padding: 0;
+    .function-item {
+        height: 25px;
+        border: 2px solid transparent;
+        padding: 15px;
+        border-radius: 17px;
+        font-family: $texte-font;
+        font-weight: map-get($font-weights, bold );
+        margin: 20px 0;
+        font-size: map-get($font-sizes, small );
+        background-color: $section-backColor;
+        box-shadow: $block-shadow $shadow;
+            &:hover {
+                background-color: rgba($primary-color, .1);
+                box-shadow: $block-shadow $darker-shadow;
+                }
+            &:hover {
+                & .function-icon {
+                    color: $primary-color;
+                }
+            } 
+        }
+    .numbers {
+        position: absolute;
+        left: 25px;
+        border: 2px solid transparent;
+        background-color: $primary-color;
+        color: white;
+        height: 18px;
+        width: 18px;
+        border-radius: 10px;
+        line-height: 2;
+        text-align: center;
+        transform: translate(-4px, -1px);
+        font-size: map-get($font-sizes, xxs );
+    }
+    .function-icon {
+        margin: 15px 20px;
+        color: #7e7e7e;
+        font-size: 1.2em;
+    }
+}

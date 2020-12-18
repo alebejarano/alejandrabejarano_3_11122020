@@ -1,0 +1,29 @@
+/* same footer style for all pages*/
+.footer {
+    background-color: $footer-backColor;
+    padding: 15px 15px 25px 20px;
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__heading {
+        color: white;
+        letter-spacing: 0.02em;
+        font-size: map-get($font-sizes, heading4 );
+        margin: 5px 0 20px 0;
+    }
+    .footer-li {
+        margin: 10px 0;
+    }
+    .footer-a {
+        @include a-style(white);
+        font-size: map-get($font-sizes, normal );
+        &--bold {
+            font-weight: map-get($font-weights, bold );
+        }
+    }
+    .footer-icon {
+        margin-right: 10px;
+    }
+}
