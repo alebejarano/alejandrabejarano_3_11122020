@@ -24,7 +24,7 @@ label.bookmark-label {
         position: absolute;
         top: 0;
         left: 0;
-        font-size: 1em;
+        font-size: 1.2em;
         transform: scale(1.1,1.2);
         cursor: pointer;
     }
@@ -62,7 +62,7 @@ label.bookmark-home {
         position: absolute;
         top: 0;
         left: 0;
-        font-size: 1em;
+        font-size: 1.2em;
         transform: scale(1.1,1.2);
         cursor: pointer;
     }
@@ -75,13 +75,13 @@ label.bookmark-home {
         /*animation: fill-in 1s ease-in-out;*/ 
         transition: all 600ms ease-in-out;
     }
-    #bookmark-switch {
+    #bookmark-switch1 {
         position: absolute;
         top: 0;
         left: 0;
         opacity: 0;
     }
-    #bookmark-switch:checked ~ i {
+    #bookmark-switch1:checked ~ i {
         &.empty-heart {
             opacity: 0;
         }

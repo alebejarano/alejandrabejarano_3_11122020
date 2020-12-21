@@ -395,6 +395,51 @@ section {
   font-weight: 500;
 }
 
+.restaurants label.bookmark-home {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+}
+
+.restaurants label.bookmark-home .fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  -webkit-transform: scale(1.1, 1.2);
+          transform: scale(1.1, 1.2);
+  cursor: pointer;
+}
+
+.restaurants label.bookmark-home .fill-heart {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*animation: fill-in 1s ease-in-out;*/
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.restaurants #bookmark-switch1, .restaurants #bookmark-switch2, .restaurants #bookmark-switch3, .restaurants #bookmark-switch4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.restaurants #bookmark-switch1.empty-heart, .restaurants #bookmark-switch2.empty-heart, .restaurants #bookmark-switch3.empty-heart, .restaurants #bookmark-switch4:checked ~ i.empty-heart {
+  opacity: 0;
+}
+
+.restaurants #bookmark-switch1.fill-heart, .restaurants #bookmark-switch2.fill-heart, .restaurants #bookmark-switch3.fill-heart, .restaurants #bookmark-switch4:checked ~ i.fill-heart {
+  /*animation: fill-in 1s ease-in-out;*/
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 label.bookmark-label {
   position: relative;
   right: 40px;
@@ -405,7 +450,7 @@ label.bookmark-label .fa-heart {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 1em;
+  font-size: 1.2em;
   -webkit-transform: scale(1.1, 1.2);
           transform: scale(1.1, 1.2);
   cursor: pointer;
@@ -450,7 +495,7 @@ label.bookmark-home .fa-heart {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 1em;
+  font-size: 1.2em;
   -webkit-transform: scale(1.1, 1.2);
           transform: scale(1.1, 1.2);
   cursor: pointer;
@@ -467,18 +512,18 @@ label.bookmark-home .fill-heart {
   transition: all 600ms ease-in-out;
 }
 
-label.bookmark-home #bookmark-switch {
+label.bookmark-home #bookmark-switch1 {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-label.bookmark-home #bookmark-switch:checked ~ i.empty-heart {
+label.bookmark-home #bookmark-switch1:checked ~ i.empty-heart {
   opacity: 0;
 }
 
-label.bookmark-home #bookmark-switch:checked ~ i.fill-heart {
+label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart {
   /*animation: fill-in 1s ease-in-out;*/
   opacity: 1;
   -webkit-transform: scale(1.1);
