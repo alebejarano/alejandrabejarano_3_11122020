@@ -33,10 +33,10 @@
         width: 100%;
         justify-content: space-between;
         letter-spacing: 0.04em;
-        .heart {
+       /* .bookmark-menu {
             @include hearts;
             @include a-style(black);
-        }
+        }*/
     }
     .starters, .main-dishes, .desserts {
         margin: 40px 0;

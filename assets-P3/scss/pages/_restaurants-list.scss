@@ -43,7 +43,7 @@
         color: darken($tertiary-color, 45%);
         font-weight: map-get($font-weights, bold );
     }
-    .heart {
+    /*.heart {
         @include hearts;
         @include a-style(black);
         z-index: 2;
@@ -55,5 +55,5 @@
             right: 4px;
             opacity: 0
         }
-    }
+    }*/ 
 } 

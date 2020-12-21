@@ -1,26 +1,30 @@
 @-webkit-keyframes fill-in {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    color: #9356DC;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    color: #FF79DA;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes fill-in {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    color: #9356DC;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    color: #FF79DA;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -179,16 +183,10 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   letter-spacing: 0.04em;
-}
-
-.menu .menu-heading .heart {
-  float: right;
-  margin: 20px;
-  width: 1.3em;
-  height: 1.4em;
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
+  /* .bookmark-menu {
+            @include hearts;
+            @include a-style(black);
+        }*/
 }
 
 .menu .starters, .menu .main-dishes, .menu .desserts {
@@ -331,6 +329,19 @@ section {
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 50px;
+  /*.heart {
+        @include hearts;
+        @include a-style(black);
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        bottom: 7px;
+        &--check {
+            bottom: 12px;
+            right: 4px;
+            opacity: 0
+        }
+    }*/
 }
 
 .restaurants__list__block {
@@ -384,28 +395,93 @@ section {
   font-weight: 500;
 }
 
-.restaurants .heart {
-  float: right;
-  margin: 20px;
-  width: 1.3em;
-  height: 1.4em;
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-  z-index: 2;
-  position: absolute;
-  right: 0;
-  bottom: 7px;
+label.bookmark-label {
+  position: relative;
+  right: 40px;
+  top: -10px;
 }
 
-.restaurants .heart--check {
-  bottom: 12px;
-  right: 4px;
+label.bookmark-label .fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  -webkit-transform: scale(1.1, 1.2);
+          transform: scale(1.1, 1.2);
+  cursor: pointer;
+}
+
+label.bookmark-label .fill-heart {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*animation: fill-in 1s ease-in-out;*/
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+label.bookmark-label #bookmark-switch {
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
 }
 
-i.fa .fa-heart:active {
-  background-color: #9356DC;
-  /*animation: fill-in .4s ease-in;*/
+label.bookmark-label #bookmark-switch:checked ~ i.empty-heart {
+  opacity: 0;
+}
+
+label.bookmark-label #bookmark-switch:checked ~ i.fill-heart {
+  /*animation: fill-in 1s ease-in-out;*/
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+label.bookmark-home {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+}
+
+label.bookmark-home .fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  -webkit-transform: scale(1.1, 1.2);
+          transform: scale(1.1, 1.2);
+  cursor: pointer;
+}
+
+label.bookmark-home .fill-heart {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*animation: fill-in 1s ease-in-out;*/
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+label.bookmark-home #bookmark-switch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+label.bookmark-home #bookmark-switch:checked ~ i.empty-heart {
+  opacity: 0;
+}
+
+label.bookmark-home #bookmark-switch:checked ~ i.fill-heart {
+  /*animation: fill-in 1s ease-in-out;*/
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
