@@ -7,6 +7,9 @@ body {
 }
 section {
     padding: 30px 20px;
+    @media (min-width: 1024px) {
+        padding: 30px 40px;
+    }
 }
 .title-font {
     font-family: $title-font;

@@ -72,6 +72,12 @@ section {
   padding: 30px 20px;
 }
 
+@media (min-width: 1024px) {
+  section {
+    padding: 30px 40px;
+  }
+}
+
 .title-font {
   font-family: "Shrikhand", cursive;
 }
@@ -377,6 +383,14 @@ section {
   }
 }
 
+@media (min-width: 1024px) {
+  .function .function__list {
+    margin: auto;
+    width: 90%;
+    grid-gap: 40px;
+  }
+}
+
 .function .function__list .function-item {
   height: 25px;
   border: 2px solid transparent;
@@ -406,6 +420,12 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .function .function__list .function-item {
+    padding: 15px 10px 10px 10px;
   }
 }
 
@@ -451,6 +471,13 @@ section {
 @media (min-width: 640px) {
   .function .function__list .function-icon {
     margin: 0px 20px 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .function .function__list .function-icon {
+    margin-right: 15px;
+    line-height: 0;
   }
 }
 
@@ -517,6 +544,13 @@ section {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurants__list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
