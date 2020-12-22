@@ -18,128 +18,130 @@
 </head>
 
 <body> <!--Homepage-->
-    <header class="header">
-        <img class="header__logo" src="assets-P3/images/logo/ohmyfood.svg" alt="logo de Oh my food" />   
-    </header>
-
-    <main>
-        <div class="location">
-            <span class="location__icon"><i class="fas fa-map-marker-alt"></i></span>
-            <input  class="location__input" type="text" name="chosen location" placeholder="Saisissez votre location" value="Paris, Belleville" />
-        </div>
-
-        <section class="explore"><!--explore restaurants-->
-            <h2 class="explore__heading texte-font">Réservez le menu qui vous convient</h2>
-            <p class="explore__p texte-font">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button type="submit" class="btn">Explorer nos restaurants</button>
-        </section>
-        <section class="function"><!--how the site works-->
-            <h2 class="texte-font">Fonctionnement</h2>
-            <ul class="function__list">
-                <li class="function-item"><span class="numbers">1</span><span class="function-icon"><i class="fas fa-mobile-alt"></i></span>Choisissez un restaurant</li>
-                <li class="function-item"><span class="numbers">2</span><span class="function-icon"><i class="fas fa-list-ul"></i></span>Composez votre menu</li>
-                <li class="function-item"><span class="numbers">3</span><span class="function-icon"><i class="fas fa-store"></i></span>Dégustez au restaurant</li>
-            </ul>
-        </section>
-        <section class="restaurants"><!--list of restaurants-->
-            <h2 class="texte-font">Restaurants</h2>
-            <div class="restaurants__list"><!--englobes all of the restaurants block-->
-                <div class="restaurants__list__block">
-                    <a href="palette-du-gout.html" class="restaurants__anchor"><!--La palette du gout-->
-                        <div class="restaurants__pic palette-gout"
-                            title="Restaurant La Paltte du Gout"> <!--picture div-->
-                        </div>
-                        <div class="new texte-font">Nouveau</div>  
-                        <div class="restaurants__text">
-                            <h4 class="texte-font">La palette du goût</h4>
-                            <p class="texte-font">Ménilmont</p>
-                        </div>
-                    </a>
-                    <label for="bookmark-switch" class="bookmark-home">
-                        <input type="checkbox" class="checkbox" id="bookmark-switch1" />
-                        <i class="fas fa-heart fill-heart"></i>
-                        <i class="far fa-heart empty-heart"></i>
-                    </label>
-                </div>
-                <div class="restaurants__list__block">
-                    <a href="note-enchante.html" class="restaurants__anchor"><!--La note enchantée-->
-                        <div class="restaurants__pic note-enchante"
-                            title="Restaurant La note enchantée"> 
-                        </div>
-                        <div class="new texte-font">Nouveau</div>  
-                        <div class="restaurants__text">
-                            <h4 class="texte-font">La note enchantée</h4>
-                            <p class="texte-font">Charonne</p>
-                        </div>
-                    </a>
-                    <label for="bookmark-switch" class="bookmark-home">
-                        <input type="checkbox" class="checkbox" id="bookmark-switch2" />
-                        <i class="fas fa-heart fill-heart"></i>
-                        <i class="far fa-heart empty-heart"></i>
-                    </label>
-                </div>
-                <div class="restaurants__list__block">
-                    <a href="a-la-française.html" class="restaurants__anchor"><!--A la française-->
-                        <div class="restaurants__pic francaise"
-                            title="Restaurant A la Française"> 
-                        </div>
-                        <div class="new texte-font">Nouveau</div>
-                        <div class="restaurants__text">
-                            <h4 class="texte-font">À la Française</h4>
-                            <p class="texte-font">Cité Rouge</p>
-                        </div>
-                    </a>
-                    <label for="bookmark-switch" class="bookmark-home">
-                        <input type="checkbox" class="checkbox" id="bookmark-switch3" />
-                        <i class="fas fa-heart fill-heart"></i>
-                        <i class="far fa-heart empty-heart"></i>
-                    </label>
-                </div>
-                <div class="restaurants__list__block">
-                    <a href="delice-de-sens.html" class="restaurants__anchor"><!--La délice des sens-->
-                        <div class="restaurants__pic delice"
-                            title="Restaurant Le délice des sens"> 
-                        </div>
-                        <div class="new texte-font">Nouveau</div>
-                        <div class="restaurants__text">
-                            <h4 class="texte-font">Le délice des sens</h4>
-                            <p class="texte-font">Folie-Méricourt</p>
-                        </div>
-                    </a>
-                    <label for="bookmark-switch" class="bookmark-home">
-                        <input type="checkbox" class="checkbox" id="bookmark-switch4" />
-                        <i class="fas fa-heart fill-heart"></i>
-                        <i class="far fa-heart empty-heart"></i>
-                    </label>
-                </div>
+    <div class="loader">
+        <div class="circle"></div>
+      </div>
+    <div class="homepage">
+        <header class="header">
+            <img class="header__logo" src="assets-P3/images/logo/ohmyfood.svg" alt="logo de Oh my food" />   
+        </header>
+    
+        <main>
+            <div class="location">
+                <span class="location__icon"><i class="fas fa-map-marker-alt"></i></span>
+                <input  class="location__input" type="text" name="chosen location" placeholder="Saisissez votre location" value="Paris, Belleville" />
             </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <h4 class="footer__heading title-font">Ohmyfood</h4>
-        <ul class="footer__list">
-            <li class="footer-li texte-font">
-                <a class="footer-a footer-a--bold" href="#"><span class="footer-icon">
-                <i class="fas fa-utensils"></i></span>Proposer un restaurant</a>
-            </li>
-            <li class="footer-li texte-font">
-                <a class="footer-a footer-a--bold" href="#"><span class="footer-icon">
-                <i class="fas fa-hands-helping"></i></span>Devenir partenaire</a>
-            </li>
-            <li class="footer-li texte-font">
-                <a class="footer-a" href="#">Mentions légales</a>
-            </li>
-            <li class="footer-li texte-font">
-                <a class="footer-a" href="mailto:conatct@ohmyfood.com">Contact</a>
-            </li>
-        </ul>
-    </footer>
+    
+            <section class="explore"><!--explore restaurants-->
+                <h2 class="explore__heading texte-font">Réservez le menu qui vous convient</h2>
+                <p class="explore__p texte-font">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <button type="submit" class="btn">Explorer nos restaurants</button>
+            </section>
+            <section class="function"><!--how the site works-->
+                <h2 class="texte-font">Fonctionnement</h2>
+                <ul class="function__list">
+                    <li class="function-item"><span class="numbers">1</span><span class="function-icon"><i class="fas fa-mobile-alt"></i></span>Choisissez un restaurant</li>
+                    <li class="function-item"><span class="numbers">2</span><span class="function-icon"><i class="fas fa-list-ul"></i></span>Composez votre menu</li>
+                    <li class="function-item"><span class="numbers">3</span><span class="function-icon"><i class="fas fa-store"></i></span>Dégustez au restaurant</li>
+                </ul>
+            </section>
+            <section class="restaurants"><!--list of restaurants-->
+                <h2 class="texte-font">Restaurants</h2>
+                <div class="restaurants__list"><!--englobes all of the restaurants block-->
+                    <div class="restaurants__list__block">
+                        <a href="palette-du-gout.html" class="restaurants__anchor"><!--La palette du gout-->
+                            <div class="restaurants__pic palette-gout"
+                                title="Restaurant La Paltte du Gout"> <!--picture div-->
+                            </div>
+                            <div class="new texte-font">Nouveau</div>  
+                            <div class="restaurants__text">
+                                <h4 class="texte-font">La palette du goût</h4>
+                                <p class="texte-font">Ménilmont</p>
+                            </div>
+                        </a>
+                        <label for="bookmark-switch" class="bookmark-home">
+                            <input type="checkbox" class="checkbox" id="bookmark-switch1" />
+                            <i class="fas fa-heart fill-heart"></i>
+                            <i class="far fa-heart empty-heart"></i>
+                        </label>
+                    </div>
+                    <div class="restaurants__list__block">
+                        <a href="note-enchante.html" class="restaurants__anchor"><!--La note enchantée-->
+                            <div class="restaurants__pic note-enchante"
+                                title="Restaurant La note enchantée"> 
+                            </div>
+                            <div class="new texte-font">Nouveau</div>  
+                            <div class="restaurants__text">
+                                <h4 class="texte-font">La note enchantée</h4>
+                                <p class="texte-font">Charonne</p>
+                            </div>
+                        </a>
+                        <label for="bookmark-switch" class="bookmark-home">
+                            <input type="checkbox" class="checkbox" id="bookmark-switch2" />
+                            <i class="fas fa-heart fill-heart"></i>
+                            <i class="far fa-heart empty-heart"></i>
+                        </label>
+                    </div>
+                    <div class="restaurants__list__block">
+                        <a href="a-la-française.html" class="restaurants__anchor"><!--A la française-->
+                            <div class="restaurants__pic francaise"
+                                title="Restaurant A la Française"> 
+                            </div>
+                            <div class="new texte-font">Nouveau</div>
+                            <div class="restaurants__text">
+                                <h4 class="texte-font">À la Française</h4>
+                                <p class="texte-font">Cité Rouge</p>
+                            </div>
+                        </a>
+                        <label for="bookmark-switch" class="bookmark-home">
+                            <input type="checkbox" class="checkbox" id="bookmark-switch3" />
+                            <i class="fas fa-heart fill-heart"></i>
+                            <i class="far fa-heart empty-heart"></i>
+                        </label>
+                    </div>
+                    <div class="restaurants__list__block">
+                        <a href="delice-de-sens.html" class="restaurants__anchor"><!--La délice des sens-->
+                            <div class="restaurants__pic delice"
+                                title="Restaurant Le délice des sens"> 
+                            </div>
+                            <div class="new texte-font">Nouveau</div>
+                            <div class="restaurants__text">
+                                <h4 class="texte-font">Le délice des sens</h4>
+                                <p class="texte-font">Folie-Méricourt</p>
+                            </div>
+                        </a>
+                        <label for="bookmark-switch" class="bookmark-home">
+                            <input type="checkbox" class="checkbox" id="bookmark-switch4" />
+                            <i class="fas fa-heart fill-heart"></i>
+                            <i class="far fa-heart empty-heart"></i>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer class="footer">
+            <h4 class="footer__heading title-font">Ohmyfood</h4>
+            <ul class="footer__list">
+                <li class="footer-li texte-font">
+                    <a class="footer-a footer-a--bold" href="#"><span class="footer-icon">
+                    <i class="fas fa-utensils"></i></span>Proposer un restaurant</a>
+                </li>
+                <li class="footer-li texte-font">
+                    <a class="footer-a footer-a--bold" href="#"><span class="footer-icon">
+                    <i class="fas fa-hands-helping"></i></span>Devenir partenaire</a>
+                </li>
+                <li class="footer-li texte-font">
+                    <a class="footer-a" href="#">Mentions légales</a>
+                </li>
+                <li class="footer-li texte-font">
+                    <a class="footer-a" href="mailto:conatct@ohmyfood.com">Contact</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    
 </body>
 
 </html>
 
-<!--<div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" 
-    title="Those Icons">Those Icons</a> from 
-    <a href="https://www.flaticon.com/" 
-    title="Flaticon">www.flaticon.com</a></div>-->

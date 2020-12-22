@@ -43,7 +43,7 @@
         color: darken($tertiary-color, 45%);
         font-weight: map-get($font-weights, bold );
     }
-    label.bookmark-home {
+    /*label.bookmark-home {
         position: absolute;
         right: 40px;
         bottom: 50px;
@@ -62,7 +62,7 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             /*animation: fill-in 1s ease-in-out;*/ 
-            transition: all 600ms ease-in-out;
+           /* transition: all 600ms ease-in-out;
         }
     }
     #bookmark-switch1, #bookmark-switch2, #bookmark-switch3, #bookmark-switch4 {
@@ -77,7 +77,7 @@
         }
         &.fill-heart {
             /*animation: fill-in 1s ease-in-out;*/
-            opacity: 1;
+            /*opacity: 1;
             transform: scale(1.1);
         }
     }

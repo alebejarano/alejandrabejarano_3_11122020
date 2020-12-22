@@ -1,30 +1,60 @@
-@-webkit-keyframes fill-in {
+@-webkit-keyframes homepage-load {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  50% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: translateX(-9999px);
+            transform: translateX(-9999px);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
-@keyframes fill-in {
+@keyframes homepage-load {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  50% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: translateX(-9999px);
+            transform: translateX(-9999px);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
   }
 }
 
@@ -329,7 +359,45 @@ section {
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 50px;
-  /*.heart {
+  /*label.bookmark-home {
+        position: absolute;
+        right: 40px;
+        bottom: 50px;
+        .fa-heart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 1em;
+            transform: scale(1.1,1.2);
+            cursor: pointer;
+        }
+        .fill-heart {
+            opacity: 0;
+            background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /*animation: fill-in 1s ease-in-out;*/
+  /* transition: all 600ms ease-in-out;
+        }
+    }
+    #bookmark-switch1, #bookmark-switch2, #bookmark-switch3, #bookmark-switch4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    #bookmark-switch1, #bookmark-switch2, #bookmark-switch3, #bookmark-switch4:checked ~ i {
+        &.empty-heart {
+            opacity: 0;
+        }
+        &.fill-heart {
+            /*animation: fill-in 1s ease-in-out;*/
+  /*opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+    /*.heart {
         @include hearts;
         @include a-style(black);
         z-index: 2;
@@ -393,51 +461,6 @@ section {
   font-size: 0.9em;
   color: #217460;
   font-weight: 500;
-}
-
-.restaurants label.bookmark-home {
-  position: absolute;
-  right: 40px;
-  bottom: 50px;
-}
-
-.restaurants label.bookmark-home .fa-heart {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 1em;
-  -webkit-transform: scale(1.1, 1.2);
-          transform: scale(1.1, 1.2);
-  cursor: pointer;
-}
-
-.restaurants label.bookmark-home .fill-heart {
-  opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /*animation: fill-in 1s ease-in-out;*/
-  -webkit-transition: all 600ms ease-in-out;
-  transition: all 600ms ease-in-out;
-}
-
-.restaurants #bookmark-switch1, .restaurants #bookmark-switch2, .restaurants #bookmark-switch3, .restaurants #bookmark-switch4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.restaurants #bookmark-switch1.empty-heart, .restaurants #bookmark-switch2.empty-heart, .restaurants #bookmark-switch3.empty-heart, .restaurants #bookmark-switch4:checked ~ i.empty-heart {
-  opacity: 0;
-}
-
-.restaurants #bookmark-switch1.fill-heart, .restaurants #bookmark-switch2.fill-heart, .restaurants #bookmark-switch3.fill-heart, .restaurants #bookmark-switch4:checked ~ i.fill-heart {
-  /*animation: fill-in 1s ease-in-out;*/
-  opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 label.bookmark-label {
@@ -528,5 +551,45 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart {
   opacity: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.homepage {
+  -webkit-animation: homapage-load 0ms 1950ms both;
+          animation: homapage-load 0ms 1950ms both;
+}
+
+.loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 3px solid transparente;
+  margin: 100px auto;
+  border-radius: 50%;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid transparente;
+}
+
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
+  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
+  -webkit-animation: animate 900ms 150ms linear infinite;
+          animation: animate 900ms 150ms linear infinite;
 }
 /*# sourceMappingURL=style.css.map */
