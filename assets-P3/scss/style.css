@@ -193,6 +193,13 @@ section {
   padding: 15px 20px 0 15px;
 }
 
+@media (min-width: 640px) {
+  .menu__text {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
 .menu__text h4 {
   font-weight: 100;
   position: relative;
@@ -227,6 +234,16 @@ section {
 
 .menu .starters, .menu .main-dishes, .menu .desserts {
   margin: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .menu .menu-choices {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+  }
 }
 
 .menu .meal-choice {
