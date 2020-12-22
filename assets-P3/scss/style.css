@@ -200,6 +200,13 @@ section {
   }
 }
 
+@media (min-width: 768px) {
+  .menu__text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
 .menu__text h4 {
   font-weight: 100;
   position: relative;
@@ -237,6 +244,16 @@ section {
 }
 
 @media (min-width: 768px) {
+  .menu .menu-choices {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
   .menu .menu-choices {
     display: -ms-grid;
     display: grid;

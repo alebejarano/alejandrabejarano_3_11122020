@@ -18,6 +18,10 @@
             padding-right: 40px;
             padding-left: 40px;
         }
+        @media (min-width: 768px) {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
         h4 {
             font-weight: map-get($font-weights, thin );
             position: relative;
@@ -47,6 +51,11 @@
     }    
     .menu-choices {
         @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 10px;
+        }
+        @media (min-width: 1024px) {
             display: grid;
             grid-template-columns: repeat(3,1fr);
             grid-column-gap: 10px;
