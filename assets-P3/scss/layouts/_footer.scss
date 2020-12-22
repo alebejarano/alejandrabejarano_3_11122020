@@ -6,6 +6,10 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+        @media (min-width: 640px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
     }
     &__heading {
         color: white;

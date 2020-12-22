@@ -1,6 +1,13 @@
 .restaurants {
     background-color: $section-backColor;
     padding-bottom: 50px;
+    &__list {
+        @media (min-width: 640px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 10px
+        }
+    }
     &__list__block {
         position: relative;
     }
