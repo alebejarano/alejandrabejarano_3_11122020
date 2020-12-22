@@ -3,6 +3,13 @@
     width: 90%;
     margin: 10px;
     padding: 0;
+    @media (min-width: 640px) {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 25px;
+        width: 100%;
+        margin: 0;
+    }
     .function-item {
         height: 25px;
         border: 2px solid transparent;
@@ -23,6 +30,9 @@
                     color: $primary-color;
                 }
             } 
+            @media (min-width: 640px){
+                display: flex;
+            }
         }
     .numbers {
         position: absolute;
@@ -37,10 +47,20 @@
         text-align: center;
         transform: translate(-4px, -1px);
         font-size: map-get($font-sizes, xxs );
+        @media (min-width: 640px) {
+            position: relative;
+            left: -22px;
+            padding: 3px 6px;
+            border-radius: 50%;
+        }
+        
     }
     .function-icon {
         margin: 15px 20px;
         color: #7e7e7e;
         font-size: 1.2em;
+        @media (min-width: 640px) {
+            margin: 0px 20px 0 0;
+        }
     }
 }

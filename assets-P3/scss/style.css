@@ -310,6 +310,18 @@ section {
   padding: 0;
 }
 
+@media (min-width: 640px) {
+  .function__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .function__list .function-item {
   height: 25px;
   border: 2px solid transparent;
@@ -334,6 +346,14 @@ section {
   color: #9356DC;
 }
 
+@media (min-width: 640px) {
+  .function__list .function-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .function__list .numbers {
   position: absolute;
   left: 25px;
@@ -350,10 +370,25 @@ section {
   font-size: 0.7em;
 }
 
+@media (min-width: 640px) {
+  .function__list .numbers {
+    position: relative;
+    left: -22px;
+    padding: 3px 6px;
+    border-radius: 50%;
+  }
+}
+
 .function__list .function-icon {
   margin: 15px 20px;
   color: #7e7e7e;
   font-size: 1.2em;
+}
+
+@media (min-width: 640px) {
+  .function__list .function-icon {
+    margin: 0px 20px 0 0;
+  }
 }
 
 .restaurants {
@@ -485,7 +520,6 @@ label.bookmark-label .fill-heart {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  /*animation: fill-in 1s ease-in-out;*/
   -webkit-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
 }
@@ -502,7 +536,6 @@ label.bookmark-label #bookmark-switch:checked ~ i.empty-heart {
 }
 
 label.bookmark-label #bookmark-switch:checked ~ i.fill-heart {
-  /*animation: fill-in 1s ease-in-out;*/
   opacity: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -530,7 +563,6 @@ label.bookmark-home .fill-heart {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  /*animation: fill-in 1s ease-in-out;*/
   -webkit-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
 }
@@ -547,49 +579,46 @@ label.bookmark-home #bookmark-switch1:checked ~ i.empty-heart {
 }
 
 label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart {
-  /*animation: fill-in 1s ease-in-out;*/
   opacity: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.homepage {
-  -webkit-animation: homapage-load 0ms 1950ms both;
-          animation: homapage-load 0ms 1950ms both;
+/*.homepage {
+    animation: homapage-load 0ms $homepage-delay both;
+    z-index: 1000;
 }
-
 .loader {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border: 3px solid transparente;
-  margin: 100px auto;
-  border-radius: 50%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 3px solid transparente;
+    margin: 100px auto;
+    border-radius: 50%;
+    z-index: 1005;
 }
-
+  
 .loader:before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  right: 25px;
-  bottom: 25px;
-  z-index: 10;
-  background: white;
-  border-radius: 50%;
-  border: 2px solid transparente;
+   content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    z-index: 10;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid transparente;
+    
 }
-
-.circle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
-  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
-  -webkit-animation: animate 900ms 150ms linear infinite;
-          animation: animate 900ms 150ms linear infinite;
+.spin {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient( $primary-color, $secondary-color, $tertiary-color);
+    animation: animate 900ms 150ms linear infinite;
 }
+*/
 /*# sourceMappingURL=style.css.map */
