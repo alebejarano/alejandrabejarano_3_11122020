@@ -49,6 +49,15 @@
     .starters, .main-dishes, .desserts {
         margin: 40px 0;
     }    
+    .starters--anim {
+        animation: fadein 1s ease-out 200ms 1;
+    }
+    .main-dishes--anim {
+        animation: fadein 1s ease-out 400ms 1;
+    }
+    .desserts--anim {
+        animation: fadein 1s ease-out 600ms 1;
+    }
     .menu-choices {
         @media (min-width: 768px) {
             display: grid;
@@ -67,6 +76,7 @@
         padding: 5px;
         margin-bottom: 15px;
         border-radius: 15px;
+        cursor: pointer;
         .price {
             float: right;
             font-size: map-get($font-sizes, small );
