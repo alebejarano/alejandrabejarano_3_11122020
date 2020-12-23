@@ -809,18 +809,18 @@ label.bookmark-home .fill-heart {
   transition: all 600ms ease-in-out;
 }
 
-label.bookmark-home #bookmark-switch1 {
+label.bookmark-home #bookmark-switch1, label.bookmark-home #bookmark-switch2, label.bookmark-home #bookmark-switch3, label.bookmark-home #bookmark-switch4 {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-label.bookmark-home #bookmark-switch1:checked ~ i.empty-heart {
+label.bookmark-home #bookmark-switch1:checked ~ i.empty-heart, label.bookmark-home #bookmark-switch2:checked ~ i.empty-heart, label.bookmark-home #bookmark-switch3:checked ~ i.empty-heart, label.bookmark-home #bookmark-switch4:checked ~ i.empty-heart {
   opacity: 0;
 }
 
-label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart {
+label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch2:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch3:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch4:checked ~ i.fill-heart {
   opacity: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -846,7 +846,6 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart {
   left: 20px;
   right: 20px;
   bottom: 20px;
-  /*z-index: 10;*/
   background: white;
   border-radius: 50%;
 }

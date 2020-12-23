@@ -72,21 +72,22 @@ label.bookmark-home {
         -webkit-text-fill-color: transparent;
         transition: all 600ms ease-in-out;
     }
-    #bookmark-switch1 {
+    #bookmark-switch1, #bookmark-switch2, #bookmark-switch3, #bookmark-switch4  {
         position: absolute;
         top: 0;
         left: 0;
         opacity: 0;
-    }
-    #bookmark-switch1:checked ~ i {
-        &.empty-heart {
-            opacity: 0;
+        &:checked ~ i {
+            &.empty-heart {
+                opacity: 0;
+            }
+            &.fill-heart {
+                opacity: 1;
+                transform: scale(1.1);
+            }
         }
-        &.fill-heart {
-            opacity: 1;
-            transform: scale(1.1);
-        }
     }
+    
 }
 .homepage {
     animation: homapage-load 300ms $homepage-delay both;
@@ -106,7 +107,6 @@ label.bookmark-home {
     left: 20px;
     right: 20px;
     bottom: 20px;
-    /*z-index: 10;*/
     background: white;
     border-radius: 50%;
 }
