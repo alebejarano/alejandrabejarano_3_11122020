@@ -220,6 +220,129 @@ section {
   }
 }
 
+label.bookmark-label {
+  position: relative;
+  right: 40px;
+  top: -10px;
+}
+
+label.bookmark-label .fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.2em;
+  -webkit-transform: scale(1.1, 1.2);
+          transform: scale(1.1, 1.2);
+  cursor: pointer;
+}
+
+label.bookmark-label .fill-heart {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+label.bookmark-label #bookmark-switch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+label.bookmark-label #bookmark-switch:checked ~ i.empty-heart {
+  opacity: 0;
+}
+
+label.bookmark-label #bookmark-switch:checked ~ i.fill-heart {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+label.bookmark-home {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+}
+
+label.bookmark-home .fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.2em;
+  -webkit-transform: scale(1.1, 1.2);
+          transform: scale(1.1, 1.2);
+  cursor: pointer;
+}
+
+label.bookmark-home .fill-heart {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+label.bookmark-home #bookmark-switch1, label.bookmark-home #bookmark-switch2, label.bookmark-home #bookmark-switch3, label.bookmark-home #bookmark-switch4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+label.bookmark-home #bookmark-switch1:checked ~ i.empty-heart, label.bookmark-home #bookmark-switch2:checked ~ i.empty-heart, label.bookmark-home #bookmark-switch3:checked ~ i.empty-heart, label.bookmark-home #bookmark-switch4:checked ~ i.empty-heart {
+  opacity: 0;
+}
+
+label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch2:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch3:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch4:checked ~ i.fill-heart {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.homepage {
+  -webkit-animation: homapage-load 300ms 2850ms both;
+          animation: homapage-load 300ms 2850ms both;
+}
+
+/*lading spinner*/
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 100px auto;
+  border-radius: 50%;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+.spin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
+  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
+  -webkit-animation: spinner 900ms 150ms linear infinite;
+          animation: spinner 900ms 150ms linear infinite;
+}
+
 .header {
   background-color: white;
 }
@@ -396,7 +519,8 @@ section {
 
 .menu .meal-choice .plate {
   padding: 5px;
-  width: 82%;
+  /*width: 82%;*/
+  width: 300px;
 }
 
 .menu .meal-choice .price {
@@ -619,57 +743,6 @@ section {
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 50px;
-  /*label.bookmark-home {
-        position: absolute;
-        right: 40px;
-        bottom: 50px;
-        .fa-heart {
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-size: 1em;
-            transform: scale(1.1,1.2);
-            cursor: pointer;
-        }
-        .fill-heart {
-            opacity: 0;
-            background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            /*animation: fill-in 1s ease-in-out;*/
-  /* transition: all 600ms ease-in-out;
-        }
-    }
-    #bookmark-switch1, #bookmark-switch2, #bookmark-switch3, #bookmark-switch4 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-    }
-    #bookmark-switch1, #bookmark-switch2, #bookmark-switch3, #bookmark-switch4:checked ~ i {
-        &.empty-heart {
-            opacity: 0;
-        }
-        &.fill-heart {
-            /*animation: fill-in 1s ease-in-out;*/
-  /*opacity: 1;
-            transform: scale(1.1);
-        }
-    }
-    /*.heart {
-        @include hearts;
-        @include a-style(black);
-        z-index: 2;
-        position: absolute;
-        right: 0;
-        bottom: 7px;
-        &--check {
-            bottom: 12px;
-            right: 4px;
-            opacity: 0
-        }
-    }*/
 }
 
 @media (min-width: 640px) {
@@ -738,127 +811,5 @@ section {
   font-size: 0.9em;
   color: #217460;
   font-weight: 500;
-}
-
-label.bookmark-label {
-  position: relative;
-  right: 40px;
-  top: -10px;
-}
-
-label.bookmark-label .fa-heart {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 1.2em;
-  -webkit-transform: scale(1.1, 1.2);
-          transform: scale(1.1, 1.2);
-  cursor: pointer;
-}
-
-label.bookmark-label .fill-heart {
-  opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: all 600ms ease-in-out;
-  transition: all 600ms ease-in-out;
-}
-
-label.bookmark-label #bookmark-switch {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-label.bookmark-label #bookmark-switch:checked ~ i.empty-heart {
-  opacity: 0;
-}
-
-label.bookmark-label #bookmark-switch:checked ~ i.fill-heart {
-  opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-label.bookmark-home {
-  position: absolute;
-  right: 40px;
-  bottom: 50px;
-}
-
-label.bookmark-home .fa-heart {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 1.2em;
-  -webkit-transform: scale(1.1, 1.2);
-          transform: scale(1.1, 1.2);
-  cursor: pointer;
-}
-
-label.bookmark-home .fill-heart {
-  opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: all 600ms ease-in-out;
-  transition: all 600ms ease-in-out;
-}
-
-label.bookmark-home #bookmark-switch1, label.bookmark-home #bookmark-switch2, label.bookmark-home #bookmark-switch3, label.bookmark-home #bookmark-switch4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-label.bookmark-home #bookmark-switch1:checked ~ i.empty-heart, label.bookmark-home #bookmark-switch2:checked ~ i.empty-heart, label.bookmark-home #bookmark-switch3:checked ~ i.empty-heart, label.bookmark-home #bookmark-switch4:checked ~ i.empty-heart {
-  opacity: 0;
-}
-
-label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch2:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch3:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch4:checked ~ i.fill-heart {
-  opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.homepage {
-  -webkit-animation: homapage-load 300ms 2850ms both;
-          animation: homapage-load 300ms 2850ms both;
-}
-
-.loader {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin: 100px auto;
-  border-radius: 50%;
-}
-
-.loader:before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  background: white;
-  border-radius: 50%;
-}
-
-.spin {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
-  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
-  -webkit-animation: spinner 900ms 150ms linear infinite;
-          animation: spinner 900ms 150ms linear infinite;
 }
 /*# sourceMappingURL=style.css.map */

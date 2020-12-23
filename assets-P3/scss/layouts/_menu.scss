@@ -94,7 +94,8 @@
         }
         .plate {
             padding: 5px;
-            width: 82%;
+            /*width: 82%;*/
+            width: 300px;
         }
         .price {
             font-size: map-get($font-sizes, small );
