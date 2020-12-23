@@ -20,6 +20,7 @@
   }
 }
 
+/*for the leading spinner*/
 @-webkit-keyframes spinner {
   0% {
     -webkit-transform: rotate(0deg);
@@ -38,7 +39,6 @@
     opacity: 1;
   }
 }
-
 @keyframes spinner {
   0% {
     -webkit-transform: rotate(0deg);
@@ -58,6 +58,7 @@
   }
 }
 
+/*for the animation of the menus*/
 @-webkit-keyframes fadein {
   0% {
     -webkit-transform: translateY(-100%);
@@ -70,7 +71,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadein {
   0% {
     -webkit-transform: translateY(-100%);
@@ -84,6 +84,7 @@
   }
 }
 
+/*for the animation to save each plate of the menu*/
 @-webkit-keyframes save-plate {
   0% {
     -webkit-transform: translateX(-100%);
@@ -95,10 +96,9 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
-    width: 15%;
+    width: 20%;
   }
 }
-
 @keyframes save-plate {
   0% {
     -webkit-transform: translateX(-100%);
@@ -110,10 +110,11 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
-    width: 15%;
+    width: 20%;
   }
 }
 
+/*for the icon in the save plate animation*/
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -124,7 +125,6 @@
             transform: rotate(360deg);
   }
 }
-
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -387,8 +387,16 @@ section {
           animation: rotate 1s ease-out 1;
 }
 
+.menu .meal-choice:hover .plate {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .menu .meal-choice .plate {
   padding: 5px;
+  width: 82%;
 }
 
 .menu .meal-choice .price {
@@ -409,9 +417,9 @@ section {
 
 .menu .meal-choice .check-icon {
   color: white;
-  line-height: 3;
-  margin-left: 18px;
-  margin-top: 7px;
+  line-height: 61px;
+  display: block;
+  text-align: center;
 }
 
 .menu .meal-choice h5 {

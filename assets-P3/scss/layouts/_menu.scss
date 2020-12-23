@@ -85,9 +85,16 @@
             .check-icon {
                 animation: rotate 1s ease-out 1;
             }
+            .plate {
+                min-width: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         .plate {
             padding: 5px;
+            width: 82%;
         }
         .price {
             font-size: map-get($font-sizes, small );
@@ -104,9 +111,9 @@
         }
         .check-icon {
             color: white;
-            line-height: 3;
-            margin-left: 18px;
-            margin-top: 7px;
+            line-height: 61px;
+            display: block;
+            text-align: center;
         }
         h5 {
             font-size: map-get($font-sizes, normal );

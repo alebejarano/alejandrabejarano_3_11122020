@@ -6,6 +6,7 @@
             transform: translateX(0);
         }
 }
+/*for the leading spinner*/
 @keyframes spinner {
     0% {
       transform: rotate(0deg);
@@ -22,6 +23,7 @@
       opacity: 1;
     }
 } 
+/*for the animation of the menus*/
 @keyframes fadein {
   0% {
     transform: translateY(-100%);
@@ -32,6 +34,7 @@
     opacity: 1;
   }
 }  
+/*for the animation to save each plate of the menu*/ 
 @keyframes save-plate {
   0% {
     transform: translateX(-100%);
@@ -41,9 +44,10 @@
   100% {
     transform: translateX(0);
     opacity: 1;
-    width: 15%;
+    width: 20%;
   }
 }
+/*for the icon in the save plate animation*/ 
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
