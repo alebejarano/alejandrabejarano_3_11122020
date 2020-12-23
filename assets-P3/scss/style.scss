@@ -88,32 +88,27 @@ label.bookmark-home {
         }
     }
 }
-/*.homepage {
-    animation: homapage-load 0ms $homepage-delay both;
-    z-index: 1000;
-}
+.homepage {
+    animation: homapage-load 300ms $homepage-delay both;
+}    
 .loader {
     position: relative;
-    width: 200px;
-    height: 200px;
-    border: 3px solid transparente;
+    width: 100px;
+    height: 100px;
     margin: 100px auto;
     border-radius: 50%;
-    z-index: 1005;
 }
   
 .loader:before {
    content: "";
     position: absolute;
-    top: 25px;
-    left: 25px;
-    right: 25px;
-    bottom: 25px;
-    z-index: 10;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    /*z-index: 10;*/
     background: white;
     border-radius: 50%;
-    border: 2px solid transparente;
-    
 }
 .spin {
     position: absolute;
@@ -124,7 +119,7 @@ label.bookmark-home {
     background: linear-gradient( $primary-color, $secondary-color, $tertiary-color);
     animation: spinner 900ms 150ms linear infinite;
 }
-*/ 
+
 
   
   

@@ -73,16 +73,40 @@
     .meal-choice {
         background-color: white;
         box-shadow: $block-shadow $shadow;
-        padding: 5px;
         margin-bottom: 15px;
         border-radius: 15px;
         cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        &:hover {
+            .add-plate {
+                animation: save-plate 1s ease-out forwards;
+            }
+            .check-icon {
+                animation: rotate 1s ease-out 1;
+            }
+        }
+        .plate {
+            padding: 5px;
+        }
         .price {
-            float: right;
             font-size: map-get($font-sizes, small );
             font-weight: map-get($font-weights, bold );
             padding: 15px;
-            transform: translate(0px, 18px);
+            transform: translateY(20px);
+        }
+        .add-plate {
+            background-color: $tertiary-color;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            opacity: 0; 
+            width: 0;
+        }
+        .check-icon {
+            color: white;
+            line-height: 3;
+            margin-left: 18px;
+            margin-top: 7px;
         }
         h5 {
             font-size: map-get($font-sizes, normal );

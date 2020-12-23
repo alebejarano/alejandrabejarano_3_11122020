@@ -13,7 +13,7 @@ $shadow: darken($input-backColor , 10% );
 $darker-shadow: darken($input-backColor, 20% );
 $spinner-dur: 900ms;
 $spinner-delay: 150ms;
-$homepage-delay: $spinner-delay + $spinner-dur*2; 
+$homepage-delay: $spinner-delay + $spinner-dur*3; 
 
 $font-sizes: (
     "xxs": 0.7em,
