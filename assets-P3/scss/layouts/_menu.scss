@@ -91,10 +91,15 @@
         @media (min-width: 768px) {
             width: 97%;
         }
+        @media (min-width: 1024px) {
+            width: 93%;
+        }
         .plate {
             padding: 5px;
-            width: 82%;
-            /*width: 300px;*/
+            width: 81%;
+            @media (min-width: 1024px) {
+                width: 70%;
+            }
         }
         .price {
             font-size: map-get($font-sizes, small );

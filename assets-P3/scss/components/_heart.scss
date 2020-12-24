@@ -12,9 +12,11 @@ label.bookmark-label {
     }
     .fill-heart {
         opacity: 0;
-        background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
+        background: linear-gradient(180deg, $primary-color, $secondary-color);
+        background: -webkit-gradient(linear, (180deg, $primary-color, $secondary-color));
         -webkit-background-clip: text;
         background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent; 
         transition: all 600ms ease-in-out;
     }
@@ -51,8 +53,8 @@ label.bookmark-home {
     }
     .fill-heart {
         opacity: 0;
-        background: linear-gradient(left top, left bottom, from($primary-color), to($secondary-color));
-        background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
+        background: linear-gradient(180deg, $primary-color, $secondary-color);
+        background: -webkit-gradient(linear, (180deg, $primary-color, $secondary-color));
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
