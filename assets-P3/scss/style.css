@@ -448,10 +448,6 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
       -ms-flex-pack: justify;
           justify-content: space-between;
   letter-spacing: 0.04em;
-  /* .bookmark-menu {
-            @include hearts;
-            @include a-style(black);
-        }*/
 }
 
 .menu .starters, .menu .main-dishes, .menu .desserts {
