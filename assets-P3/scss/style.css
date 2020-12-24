@@ -334,10 +334,10 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 .loader:before {
   content: "";
   position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
   background: white;
   border-radius: 50%;
 }
@@ -518,7 +518,6 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 }
 
 .menu .meal-choice:hover .plate {
-  min-width: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
