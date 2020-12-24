@@ -525,10 +525,16 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   text-overflow: ellipsis;
 }
 
+@media (min-width: 768px) {
+  .menu .meal-choice {
+    width: 97%;
+  }
+}
+
 .menu .meal-choice .plate {
   padding: 5px;
-  /*width: 82%;*/
-  width: 300px;
+  width: 82%;
+  /*width: 300px;*/
 }
 
 .menu .meal-choice .price {
