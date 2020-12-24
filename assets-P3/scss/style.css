@@ -269,6 +269,12 @@ label.bookmark-home {
   bottom: 50px;
 }
 
+@media (min-width: 640px) {
+  label.bookmark-home {
+    bottom: 75px;
+  }
+}
+
 label.bookmark-home .fa-heart {
   position: absolute;
   top: 0;
@@ -281,6 +287,8 @@ label.bookmark-home .fa-heart {
 
 label.bookmark-home .fill-heart {
   opacity: 0;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(bottom, left), color-stop(from(#9356DC)), to(to(#FF79DA)));
+  background: linear-gradient(left top, left bottom, from(#9356DC), to(#FF79DA));
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   background-clip: text;

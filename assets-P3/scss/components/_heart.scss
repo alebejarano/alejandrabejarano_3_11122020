@@ -38,6 +38,9 @@ label.bookmark-home {
     position: absolute;
     right: 40px;
     bottom: 50px;
+    @media (min-width: 640px) {
+        bottom: 75px;
+    }
     .fa-heart {
         position: absolute;
         top: 0;
@@ -48,6 +51,7 @@ label.bookmark-home {
     }
     .fill-heart {
         opacity: 0;
+        background: linear-gradient(left top, left bottom, from($primary-color), to($secondary-color));
         background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
         -webkit-background-clip: text;
         background-clip: text;
