@@ -1,7 +1,14 @@
 
 .homepage {
-    animation: homapage-load 300ms $homepage-delay both;
-}    
+    z-index: 1;
+}
+.loader-conatiner {
+    width: 100vw;
+    height: 100vh;
+    animation: hompage-load 3s 100ms backwards;
+    z-index: 3;
+}
+
 /*lading spinner*/ 
 .loader {
     position: relative;

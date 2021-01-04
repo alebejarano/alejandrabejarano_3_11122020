@@ -1,22 +1,18 @@
 @-webkit-keyframes homepage-load {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    height: 100vh;
+    width: 100vw;
   }
 }
 
 @keyframes homepage-load {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    height: 100vh;
+    width: 100vw;
   }
 }
 
@@ -318,8 +314,15 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 }
 
 .homepage {
-  -webkit-animation: homapage-load 300ms 2850ms both;
-          animation: homapage-load 300ms 2850ms both;
+  z-index: 1;
+}
+
+.loader-conatiner {
+  width: 100vw;
+  height: 100vh;
+  -webkit-animation: hompage-load 3s 100ms backwards;
+          animation: hompage-load 3s 100ms backwards;
+  z-index: 3;
 }
 
 /*lading spinner*/
