@@ -1,9 +1,42 @@
 @keyframes homepage-load {
-        0% , 100% {
-            transform: scale(1);
-            height: 100vh;
-            width: 100vw;
-        }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    z-index: 10;
+  }
+}
+/*fot the loader container*/
+@keyframes background-loader {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  50% {
+    opacity: 1;
+    display: block;
+  }
+  90% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 /*for the leading spinner*/
 @keyframes spinner {

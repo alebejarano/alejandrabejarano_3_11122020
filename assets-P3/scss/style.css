@@ -1,18 +1,82 @@
 @-webkit-keyframes homepage-load {
-  0%, 100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    height: 100vh;
-    width: 100vw;
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    z-index: 10;
   }
 }
 
 @keyframes homepage-load {
-  0%, 100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    height: 100vh;
-    width: 100vw;
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    z-index: 10;
+  }
+}
+
+/*fot the loader container*/
+@-webkit-keyframes background-loader {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  50% {
+    opacity: 1;
+    display: block;
+  }
+  90% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes background-loader {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  50% {
+    opacity: 1;
+    display: block;
+  }
+  90% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 
@@ -314,15 +378,18 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 }
 
 .homepage {
-  z-index: 1;
+  z-index: 6;
+  -webkit-animation: homepage-load 3s forwards;
+          animation: homepage-load 3s forwards;
 }
 
 .loader-conatiner {
+  background-color: white;
   width: 100vw;
   height: 100vh;
-  -webkit-animation: hompage-load 3s 100ms backwards;
-          animation: hompage-load 3s 100ms backwards;
-  z-index: 3;
+  position: fixed;
+  -webkit-animation: background-loader 3s forwards;
+          animation: background-loader 3s forwards;
 }
 
 /*lading spinner*/
@@ -330,7 +397,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   position: relative;
   width: 100px;
   height: 100px;
-  margin: 100px auto;
+  margin: 300px auto;
   border-radius: 50%;
 }
 
