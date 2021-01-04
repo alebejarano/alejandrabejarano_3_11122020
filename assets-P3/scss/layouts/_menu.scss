@@ -81,7 +81,7 @@
             .check-icon {
                 animation: rotate 1s ease-out 1;
             }
-            .plate {
+            .plate p {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -122,11 +122,14 @@
         h5 {
             font-size: map-get($font-sizes, normal );
             margin: 5px;
+            white-space: nowrap;
         }
         p {
             font-weight: map-get($font-weights, thin );
             font-size: map-get($font-sizes, small );
             margin: 5px;
+            max-width: 200px;
+            white-space: nowrap;
         }
     }
 }

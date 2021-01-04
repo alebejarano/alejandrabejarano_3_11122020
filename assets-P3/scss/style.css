@@ -587,7 +587,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
           animation: rotate 1s ease-out 1;
 }
 
-.menu .meal-choice:hover .plate {
+.menu .meal-choice:hover .plate p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -642,12 +642,15 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 .menu .meal-choice h5 {
   font-size: 1em;
   margin: 5px;
+  white-space: nowrap;
 }
 
 .menu .meal-choice p {
   font-weight: 100;
   font-size: 0.9em;
   margin: 5px;
+  max-width: 200px;
+  white-space: nowrap;
 }
 
 /* same footer style for all pages*/
