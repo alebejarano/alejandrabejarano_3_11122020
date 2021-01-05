@@ -286,6 +286,12 @@ label.bookmark-label {
   top: -10px;
 }
 
+@media (max-width: 347px) {
+  label.bookmark-label {
+    right: 20px;
+  }
+}
+
 label.bookmark-label .fa-heart {
   position: absolute;
   top: 0;
@@ -601,7 +607,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 
 @media (min-width: 1024px) {
   .menu .meal-choice {
-    width: 93%;
+    width: 100%;
   }
 }
 
@@ -622,6 +628,14 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   -webkit-transform: translate(0px, 30px);
           transform: translate(0px, 30px);
   padding-right: 15px;
+}
+
+@media (min-width: 1024px) {
+  .menu .meal-choice .price {
+    -webkit-transform: translate(10px, 34px);
+            transform: translate(10px, 34px);
+    padding-right: 20px;
+  }
 }
 
 .menu .meal-choice .add-plate {
@@ -646,6 +660,14 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   white-space: nowrap;
 }
 
+@media (max-width: 347px) {
+  .menu .meal-choice h5 {
+    font-size: 0.9em;
+    max-width: 170px;
+    text-overflow: ellipsis;
+  }
+}
+
 @media (min-width: 1024px) {
   .menu .meal-choice h5 {
     max-width: 280px;
@@ -658,6 +680,14 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   margin: 5px;
   max-width: 200px;
   white-space: nowrap;
+}
+
+@media (max-width: 347px) {
+  .menu .meal-choice p {
+    font-size: 0.8em;
+    max-width: 170px;
+    text-overflow: ellipsis;
+  }
 }
 
 @media (min-width: 1024px) {
