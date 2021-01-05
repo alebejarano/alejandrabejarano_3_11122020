@@ -63,7 +63,7 @@
             grid-template-columns: repeat(2,1fr);
             grid-column-gap: 10px;
         }
-        @media (min-width: 1024px) {
+        @media (min-width: 1280px) {
             display: grid;
             grid-template-columns: repeat(3,1fr);
             grid-column-gap: 10px;
@@ -108,6 +108,9 @@
             font-weight: map-get($font-weights, bold );
             transform: translate(0px,35px);
             padding-right: 15px;
+            @media (min-width: 640px) {
+                padding-right: 30px;
+            }
             @media (min-width: 1024px) {
                 transform: translate(10px, 34px);
                 padding-right: 20px;
@@ -135,6 +138,17 @@
                 font-size: map-get($font-sizes, small );
                 max-width: 150px;
                 text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            @media (min-width: 640px) {
+                max-width: 280px;
+            }
+            @media (min-width: 768px) {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                max-width: 215px;
             }
             @media (min-width: 1024px) {
                 max-width: 280px;
@@ -152,6 +166,15 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
+            }
+            @media (min-width: 640px) {
+                max-width: 280px;
+            }
+            @media (min-width: 768px) {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                max-width: 200px;
             }
             @media (min-width: 1024px) {
                 max-width: 280px;

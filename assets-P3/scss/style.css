@@ -443,7 +443,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 .header__logo {
   display: block;
   margin: auto;
-  padding: 15px 15px 10px 15px;
+  padding: 20px 15px 15px 15px;
 }
 
 .header__arrow {
@@ -453,6 +453,20 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   text-decoration: none;
   color: black;
   font-size: 1.2em;
+}
+
+@media (min-width: 1024px) {
+  .header__arrow {
+    font-size: 1.5em;
+    line-height: 2.5;
+    padding: 0px 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header__arrow {
+    line-height: 3;
+  }
 }
 
 /*background images of the restaurants*/
@@ -570,7 +584,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .menu .menu-choices {
     display: -ms-grid;
     display: grid;
@@ -642,6 +656,12 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   padding-right: 15px;
 }
 
+@media (min-width: 640px) {
+  .menu .meal-choice .price {
+    padding-right: 30px;
+  }
+}
+
 @media (min-width: 1024px) {
   .menu .meal-choice .price {
     -webkit-transform: translate(10px, 34px);
@@ -677,6 +697,23 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
     font-size: 0.9em;
     max-width: 150px;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 640px) {
+  .menu .meal-choice h5 {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu .meal-choice h5 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 215px;
   }
 }
 
@@ -701,6 +738,21 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+  }
+}
+
+@media (min-width: 640px) {
+  .menu .meal-choice p {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu .meal-choice p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 200px;
   }
 }
 
