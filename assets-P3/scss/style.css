@@ -675,7 +675,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 @media (max-width: 350px) {
   .menu .meal-choice h5 {
     font-size: 0.9em;
-    max-width: 170px;
+    max-width: 150px;
     text-overflow: ellipsis;
   }
 }
@@ -697,7 +697,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 @media (max-width: 350px) {
   .menu .meal-choice p {
     font-size: 0.8em;
-    max-width: 170px;
+    max-width: 150px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

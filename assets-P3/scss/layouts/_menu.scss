@@ -133,7 +133,7 @@
             white-space: nowrap; 
             @media (max-width: 350px) {
                 font-size: map-get($font-sizes, small );
-                max-width: 170px;
+                max-width: 150px;
                 text-overflow: ellipsis;
             }
             @media (min-width: 1024px) {
@@ -148,7 +148,7 @@
             white-space: nowrap;
             @media (max-width: 350px) {
                 font-size: map-get($font-sizes, xs );
-                max-width: 170px;
+                max-width: 150px;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
