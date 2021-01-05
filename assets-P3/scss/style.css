@@ -619,9 +619,9 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 .menu .meal-choice .price {
   font-size: 0.9em;
   font-weight: 500;
-  padding: 15px;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translate(0px, 30px);
+          transform: translate(0px, 30px);
+  padding-right: 15px;
 }
 
 .menu .meal-choice .add-plate {
@@ -646,12 +646,24 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   white-space: nowrap;
 }
 
+@media (min-width: 1024px) {
+  .menu .meal-choice h5 {
+    max-width: 280px;
+  }
+}
+
 .menu .meal-choice p {
   font-weight: 100;
   font-size: 0.9em;
   margin: 5px;
   max-width: 200px;
   white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .menu .meal-choice p {
+    max-width: 280px;
+  }
 }
 
 /* same footer style for all pages*/
