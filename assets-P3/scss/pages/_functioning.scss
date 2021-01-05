@@ -41,6 +41,9 @@
                         color: $primary-color;
                     }
                 } 
+                @media (max-width: 350px) {
+                    text-align: center;
+                }
                 @media (min-width: 640px){
                     display: flex;
                 }
@@ -78,6 +81,10 @@
             margin: 15px 20px;
             color: #7e7e7e;
             font-size: 1.2em;
+            @media (max-width: 350px) {
+                margin-right: 5px;
+                margin-left: 0px;
+            }
             @media (min-width: 640px) {
                 margin: 0px 20px 0 0;
             }

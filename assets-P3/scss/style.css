@@ -123,6 +123,9 @@
   0% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
     opacity: 0.5;
   }
   100% {
@@ -135,6 +138,9 @@
   0% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
     opacity: 0.5;
   }
   100% {
@@ -286,9 +292,9 @@ label.bookmark-label {
   top: -10px;
 }
 
-@media (max-width: 347px) {
+@media (max-width: 350px) {
   label.bookmark-label {
-    right: 20px;
+    right: 10px;
   }
 }
 
@@ -529,23 +535,29 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   letter-spacing: 0.04em;
 }
 
+@media (max-width: 350px) {
+  .menu .menu-heading {
+    width: 95%;
+  }
+}
+
 .menu .starters, .menu .main-dishes, .menu .desserts {
   margin: 40px 0;
 }
 
 .menu .starters--anim {
-  -webkit-animation: fadein 1s ease-out 200ms 1;
-          animation: fadein 1s ease-out 200ms 1;
+  -webkit-animation: fadein 900ms ease-out 200ms 1;
+          animation: fadein 900ms ease-out 200ms 1;
 }
 
 .menu .main-dishes--anim {
-  -webkit-animation: fadein 1s ease-out 400ms 1;
-          animation: fadein 1s ease-out 400ms 1;
+  -webkit-animation: fadein 900ms ease-out 400ms 1;
+          animation: fadein 900ms ease-out 400ms 1;
 }
 
 .menu .desserts--anim {
-  -webkit-animation: fadein 1s ease-out 600ms 1;
-          animation: fadein 1s ease-out 600ms 1;
+  -webkit-animation: fadein 900ms ease-out 600ms 1;
+          animation: fadein 900ms ease-out 600ms 1;
 }
 
 @media (min-width: 768px) {
@@ -625,8 +637,8 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 .menu .meal-choice .price {
   font-size: 0.9em;
   font-weight: 500;
-  -webkit-transform: translate(0px, 30px);
-          transform: translate(0px, 30px);
+  -webkit-transform: translate(0px, 35px);
+          transform: translate(0px, 35px);
   padding-right: 15px;
 }
 
@@ -660,7 +672,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   white-space: nowrap;
 }
 
-@media (max-width: 347px) {
+@media (max-width: 350px) {
   .menu .meal-choice h5 {
     font-size: 0.9em;
     max-width: 170px;
@@ -682,11 +694,13 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   white-space: nowrap;
 }
 
-@media (max-width: 347px) {
+@media (max-width: 350px) {
   .menu .meal-choice p {
     font-size: 0.8em;
     max-width: 170px;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 
@@ -813,6 +827,12 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   color: #9356DC;
 }
 
+@media (max-width: 350px) {
+  .function .function__list .function-item {
+    text-align: center;
+  }
+}
+
 @media (min-width: 640px) {
   .function .function__list .function-item {
     display: -webkit-box;
@@ -864,6 +884,13 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   margin: 15px 20px;
   color: #7e7e7e;
   font-size: 1.2em;
+}
+
+@media (max-width: 350px) {
+  .function .function__list .function-icon {
+    margin-right: 5px;
+    margin-left: 0px;
+  }
 }
 
 @media (min-width: 640px) {

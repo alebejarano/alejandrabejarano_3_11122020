@@ -41,18 +41,21 @@
         width: 100%;
         justify-content: space-between;
         letter-spacing: 0.04em;
+        @media (max-width: 350px) {
+            width: 95%;
+        }
     }
     .starters, .main-dishes, .desserts {
         margin: 40px 0;
     }    
     .starters--anim {
-        animation: fadein 1s ease-out 200ms 1;
+        animation: fadein 900ms ease-out 200ms 1;
     }
     .main-dishes--anim {
-        animation: fadein 1s ease-out 400ms 1;
+        animation: fadein 900ms ease-out 400ms 1;
     }
     .desserts--anim {
-        animation: fadein 1s ease-out 600ms 1;
+        animation: fadein 900ms ease-out 600ms 1;
     }
     .menu-choices {
         @media (min-width: 768px) {
@@ -103,7 +106,7 @@
         .price {
             font-size: map-get($font-sizes, small );
             font-weight: map-get($font-weights, bold );
-            transform: translate(0px,30px);
+            transform: translate(0px,35px);
             padding-right: 15px;
             @media (min-width: 1024px) {
                 transform: translate(10px, 34px);
@@ -128,7 +131,7 @@
             margin: 5px;
             max-width: 200px;
             white-space: nowrap; 
-            @media (max-width: 347px) {
+            @media (max-width: 350px) {
                 font-size: map-get($font-sizes, small );
                 max-width: 170px;
                 text-overflow: ellipsis;
@@ -143,10 +146,12 @@
             margin: 5px;
             max-width: 200px;
             white-space: nowrap;
-            @media (max-width: 347px) {
+            @media (max-width: 350px) {
                 font-size: map-get($font-sizes, xs );
                 max-width: 170px;
                 text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
             }
             @media (min-width: 1024px) {
                 max-width: 280px;
