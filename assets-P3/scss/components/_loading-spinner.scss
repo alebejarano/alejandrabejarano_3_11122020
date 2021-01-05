@@ -1,13 +1,13 @@
 .homepage {
     z-index: 6;
-    animation: homepage-load 3s forwards;
+    animation: homepage-load 2s forwards;
 }
 .loader-conatiner {
     background-color: white;
     width: 100vw;
     height: 100vh;
     position: fixed;
-    animation: background-loader 3s forwards;
+    animation: background-loader 2s forwards;
 }
 
 /*lading spinner*/ 

@@ -385,8 +385,8 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 
 .homepage {
   z-index: 6;
-  -webkit-animation: homepage-load 3s forwards;
-          animation: homepage-load 3s forwards;
+  -webkit-animation: homepage-load 2s forwards;
+          animation: homepage-load 2s forwards;
 }
 
 .loader-conatiner {
@@ -394,8 +394,8 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   width: 100vw;
   height: 100vh;
   position: fixed;
-  -webkit-animation: background-loader 3s forwards;
-          animation: background-loader 3s forwards;
+  -webkit-animation: background-loader 2s forwards;
+          animation: background-loader 2s forwards;
 }
 
 /*lading spinner*/
