@@ -16,7 +16,6 @@
   }
   100% {
     opacity: 1;
-    z-index: 10;
   }
 }
 
@@ -38,7 +37,6 @@
   }
   100% {
     opacity: 1;
-    z-index: 10;
   }
 }
 
@@ -432,8 +430,8 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   border-radius: 50%;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
   background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
-  -webkit-animation: spinner 900ms 150ms linear infinite;
-          animation: spinner 900ms 150ms linear infinite;
+  -webkit-animation: spinner 900ms linear infinite;
+          animation: spinner 900ms linear infinite;
 }
 
 .header {
