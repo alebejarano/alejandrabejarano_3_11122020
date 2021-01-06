@@ -1,3 +1,4 @@
+/*for the heart in the menus*/ 
 label.bookmark-label {
     position: relative;
     right: 40px;
@@ -16,7 +17,6 @@ label.bookmark-label {
     .fill-heart {
         opacity: 0;
         background: linear-gradient(180deg, $primary-color, $secondary-color);
-        background: -webkit-gradient(linear, (180deg, $primary-color, $secondary-color));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -39,6 +39,7 @@ label.bookmark-label {
         }
     }
 }
+/*for the hearts in the homepage*/ 
 label.bookmark-home {
     position: absolute;
     right: 40px;
@@ -57,9 +58,9 @@ label.bookmark-home {
     .fill-heart {
         opacity: 0;
         background: linear-gradient(180deg, $primary-color, $secondary-color);
-        background: -webkit-gradient(linear, (180deg, $primary-color, $secondary-color));
         -webkit-background-clip: text;
         background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
         transition: all 600ms ease-in-out;
     }

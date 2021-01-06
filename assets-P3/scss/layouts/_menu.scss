@@ -25,7 +25,7 @@
         h4 {
             font-weight: map-get($font-weights, thin );
             position: relative;
-            &::before {
+            &::before { /*for the aquamarine underline */ 
                 position: absolute;
                 content: "";
                 left    : 0;

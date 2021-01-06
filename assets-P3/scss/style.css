@@ -140,7 +140,7 @@
   }
 }
 
-/*for the animation to save each plate of the menu*/
+/*for the animation to save each plate on the menu*/
 @-webkit-keyframes save-plate {
   0% {
     -webkit-transform: translateX(-100%);
@@ -276,6 +276,7 @@ section {
   }
 }
 
+/*for the heart in the menus*/
 label.bookmark-label {
   position: relative;
   right: 40px;
@@ -302,7 +303,6 @@ label.bookmark-label .fill-heart {
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(180deg, #9356DC, #FF79DA);
-  background: -webkit-gradient(linear, 180deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -328,6 +328,7 @@ label.bookmark-label #bookmark-switch:checked ~ i.fill-heart {
           transform: scale(1.1);
 }
 
+/*for the hearts in the homepage*/
 label.bookmark-home {
   position: absolute;
   right: 40px;
@@ -354,9 +355,9 @@ label.bookmark-home .fill-heart {
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(180deg, #9356DC, #FF79DA);
-  background: -webkit-gradient(linear, 180deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
@@ -422,8 +423,8 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   border-radius: 50%;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
   background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
-  -webkit-animation: spinner 900ms linear infinite;
-          animation: spinner 900ms linear infinite;
+  -webkit-animation: spinner 1s linear infinite;
+          animation: spinner 1s linear infinite;
 }
 
 .header {
@@ -517,6 +518,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 }
 
 .menu__text h4::before {
+  /*for the aquamarine underline */
   position: absolute;
   content: "";
   left: 0;

@@ -11,9 +11,7 @@ $input-backColor: #eaeaea;
 $block-shadow: (6px 8px 15px -6px);
 $shadow: darken($input-backColor , 10% );
 $darker-shadow: darken($input-backColor, 20% );
-$spinner-dur: 900ms;
-$spinner-delay: 150ms;
-$homepage-delay: $spinner-delay + $spinner-dur*3; 
+$spinner-dur: 1s; 
 
 $font-sizes: (
     "xxs": 0.7em,
