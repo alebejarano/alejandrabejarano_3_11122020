@@ -386,7 +386,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
           animation: homepage-load 2s forwards;
 }
 
-.loader-conatiner {
+.loader-container {
   background-color: white;
   width: 100vw;
   height: 100vh;
