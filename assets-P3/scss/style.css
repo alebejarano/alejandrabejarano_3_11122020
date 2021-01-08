@@ -847,6 +847,14 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   }
 }
 
+@media (min-width: 1280px) {
+  .function .function__list {
+    justify-items: center;
+    grid-gap: 16px;
+    width: 85%;
+  }
+}
+
 .function .function__list .function-item {
   height: 25px;
   border: 2px solid transparent;
@@ -893,7 +901,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 
 @media (min-width: 1280px) {
   .function .function__list .function-item {
-    width: 60%;
+    width: 65%;
   }
 }
 
