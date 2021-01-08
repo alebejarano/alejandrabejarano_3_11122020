@@ -1,24 +1,3 @@
-@-webkit-keyframes homepage-load {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0;
-  }
-  98% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes homepage-load {
   0% {
     opacity: 0;
@@ -41,20 +20,6 @@
 }
 
 /*fot the loader container*/
-@-webkit-keyframes background-loader {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @keyframes background-loader {
   0% {
     opacity: 1;
@@ -71,28 +36,9 @@
 }
 
 /*for the leading spinner*/
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.7;
-  }
-  75% {
-    opacity: 0.3;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    opacity: 1;
-  }
-}
 @keyframes spinner {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     opacity: 1;
   }
   25% {
@@ -102,100 +48,53 @@
     opacity: 0.3;
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
     opacity: 1;
   }
 }
 
 /*for the animation of the menus*/
-@-webkit-keyframes fadein {
-  0% {
-    -webkit-transform: translateY(-90%);
-            transform: translateY(-90%);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
 @keyframes fadein {
   0% {
-    -webkit-transform: translateY(-90%);
-            transform: translateY(-90%);
+    transform: translateY(-90%);
     opacity: 0;
   }
   50% {
     opacity: 0.5;
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 /*for the animation to save each plate on the menu*/
-@-webkit-keyframes save-plate {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    opacity: 0;
-    width: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-    width: 20%;
-  }
-}
 @keyframes save-plate {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
     opacity: 0;
     width: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
     width: 20%;
   }
 }
 
 /*for the icon in the save plate animation*/
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 @keyframes rotate {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 body {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .body__menu {
@@ -228,8 +127,7 @@ section {
   line-height: 40px;
   color: #353535;
   font-size: 1em;
-  -webkit-box-shadow: 1px 1px 3px -1px #d1d1d1 inset;
-          box-shadow: 1px 1px 3px -1px #d1d1d1 inset;
+  box-shadow: 1px 1px 3px -1px #d1d1d1 inset;
 }
 
 .location__icon {
@@ -251,8 +149,7 @@ section {
   color: white;
   font-size: 0.9em;
   outline: none;
-  -webkit-box-shadow: 1px 3px 6px 2px #d1d1d1;
-          box-shadow: 1px 3px 6px 2px #d1d1d1;
+  box-shadow: 1px 3px 6px 2px #d1d1d1;
   cursor: pointer;
   margin: 25px auto;
   width: 60%;
@@ -264,10 +161,8 @@ section {
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, right bottom, from(#a36fe1), to(#ff93e1));
   background: linear-gradient(to right bottom, #a36fe1, #ff93e1);
-  -webkit-box-shadow: 1px 3px 6px 2px #b7b7b7;
-          box-shadow: 1px 3px 6px 2px #b7b7b7;
+  box-shadow: 1px 3px 6px 2px #b7b7b7;
 }
 
 @media (min-width: 768px) {
@@ -294,20 +189,17 @@ label.bookmark-label .fa-heart {
   top: 0;
   left: 0;
   font-size: 1.2em;
-  -webkit-transform: scale(1.1, 1.2);
-          transform: scale(1.1, 1.2);
+  transform: scale(1.1, 1.2);
   cursor: pointer;
 }
 
 label.bookmark-label .fill-heart {
   opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(180deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
 }
 
@@ -324,8 +216,7 @@ label.bookmark-label #bookmark-switch:checked ~ i.empty-heart {
 
 label.bookmark-label #bookmark-switch:checked ~ i.fill-heart {
   opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*for the hearts in the homepage*/
@@ -346,20 +237,17 @@ label.bookmark-home .fa-heart {
   top: 0;
   left: 0;
   font-size: 1.2em;
-  -webkit-transform: scale(1.1, 1.2);
-          transform: scale(1.1, 1.2);
+  transform: scale(1.1, 1.2);
   cursor: pointer;
 }
 
 label.bookmark-home .fill-heart {
   opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(180deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
 }
 
@@ -376,14 +264,12 @@ label.bookmark-home #bookmark-switch1:checked ~ i.empty-heart, label.bookmark-ho
 
 label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch2:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch3:checked ~ i.fill-heart, label.bookmark-home #bookmark-switch4:checked ~ i.fill-heart {
   opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .homepage {
   z-index: 6;
-  -webkit-animation: homepage-load 2s forwards;
-          animation: homepage-load 2s forwards;
+  animation: homepage-load 2s forwards;
 }
 
 .loader-container {
@@ -391,8 +277,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   width: 100vw;
   height: 100vh;
   position: fixed;
-  -webkit-animation: background-loader 2s forwards;
-          animation: background-loader 2s forwards;
+  animation: background-loader 2s forwards;
 }
 
 /*lading spinner*/
@@ -421,10 +306,8 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   height: 100%;
   z-index: -1;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
   background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
-  -webkit-animation: spinner 1s linear infinite;
-          animation: spinner 1s linear infinite;
+  animation: spinner 1s linear infinite;
 }
 
 .header {
@@ -528,16 +411,10 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 }
 
 .menu .menu-heading {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   letter-spacing: 0.04em;
 }
 
@@ -552,63 +429,49 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 }
 
 .menu .starters--anim {
-  -webkit-animation: fadein 900ms ease-out 200ms 1;
-          animation: fadein 900ms ease-out 200ms 1;
+  animation: fadein 900ms ease-out 200ms 1;
 }
 
 .menu .main-dishes--anim {
-  -webkit-animation: fadein 900ms ease-out 400ms 1;
-          animation: fadein 900ms ease-out 400ms 1;
+  animation: fadein 900ms ease-out 400ms 1;
 }
 
 .menu .desserts--anim {
-  -webkit-animation: fadein 900ms ease-out 600ms 1;
-          animation: fadein 900ms ease-out 600ms 1;
+  animation: fadein 900ms ease-out 600ms 1;
 }
 
 @media (min-width: 768px) {
   .menu .menu-choices {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
   }
 }
 
 @media (min-width: 1280px) {
   .menu .menu-choices {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
   }
 }
 
 .menu .meal-choice {
   background-color: white;
-  -webkit-box-shadow: 6px 8px 15px -6px #d1d1d1;
-          box-shadow: 6px 8px 15px -6px #d1d1d1;
+  box-shadow: 6px 8px 15px -6px #d1d1d1;
   margin-bottom: 15px;
   border-radius: 15px;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .menu .meal-choice:hover .add-plate {
-  -webkit-animation: save-plate 1s ease-out forwards;
-          animation: save-plate 1s ease-out forwards;
+  animation: save-plate 1s ease-out forwards;
 }
 
 .menu .meal-choice:hover .check-icon {
-  -webkit-animation: rotate 1s ease-out 1;
-          animation: rotate 1s ease-out 1;
+  animation: rotate 1s ease-out 1;
 }
 
 .menu .meal-choice:hover .plate p, .menu .meal-choice:hover h5 {
@@ -643,8 +506,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 .menu .meal-choice .price {
   font-size: 0.9em;
   font-weight: 500;
-  -webkit-transform: translate(0px, 35px);
-          transform: translate(0px, 35px);
+  transform: translate(0px, 35px);
   padding-right: 15px;
 }
 
@@ -656,8 +518,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 
 @media (min-width: 1024px) {
   .menu .meal-choice .price {
-    -webkit-transform: translate(10px, 34px);
-            transform: translate(10px, 34px);
+    transform: translate(10px, 34px);
     padding-right: 20px;
   }
 }
@@ -768,10 +629,8 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 
 @media (min-width: 640px) {
   .footer__list {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -829,10 +688,8 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 
 @media (min-width: 640px) {
   .function .function__list {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 25px;
     width: 100%;
     margin: 0;
@@ -865,14 +722,12 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   margin: 20px 0;
   font-size: 0.9em;
   background-color: #f6f6f6;
-  -webkit-box-shadow: 6px 8px 15px -6px #d1d1d1;
-          box-shadow: 6px 8px 15px -6px #d1d1d1;
+  box-shadow: 6px 8px 15px -6px #d1d1d1;
 }
 
 .function .function__list .function-item:hover {
   background-color: rgba(147, 86, 220, 0.1);
-  -webkit-box-shadow: 6px 8px 15px -6px #b7b7b7;
-          box-shadow: 6px 8px 15px -6px #b7b7b7;
+  box-shadow: 6px 8px 15px -6px #b7b7b7;
 }
 
 .function .function__list .function-item:hover .function-icon {
@@ -887,8 +742,6 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 
 @media (min-width: 640px) {
   .function .function__list .function-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -916,8 +769,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   border-radius: 10px;
   line-height: 2;
   text-align: center;
-  -webkit-transform: translate(-4px, -1px);
-          transform: translate(-4px, -1px);
+  transform: translate(-4px, -1px);
   font-size: 0.7em;
 }
 
@@ -971,25 +823,21 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 
 @media (min-width: 640px) {
   .restaurants__list {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
   }
 }
 
 @media (min-width: 1024px) {
   .restaurants__list {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1280px) {
   .restaurants__list {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -1001,8 +849,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   border-radius: 15px;
   margin: 20px 0;
   width: 100%;
-  -webkit-box-shadow: 6px 8px 15px -6px #d1d1d1;
-          box-shadow: 6px 8px 15px -6px #d1d1d1;
+  box-shadow: 6px 8px 15px -6px #d1d1d1;
   background-color: white;
   display: block;
   position: relative;
