@@ -851,7 +851,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   .function .function__list {
     justify-items: center;
     grid-gap: 16px;
-    width: 85%;
+    width: 75%;
   }
 }
 
@@ -901,7 +901,7 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
 
 @media (min-width: 1280px) {
   .function .function__list .function-item {
-    width: 65%;
+    width: 75%;
   }
 }
 
