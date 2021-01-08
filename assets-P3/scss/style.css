@@ -891,6 +891,12 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   }
 }
 
+@media (min-width: 1280px) {
+  .function .function__list .function-item {
+    width: 60%;
+  }
+}
+
 .function .function__list .numbers {
   position: absolute;
   left: 25px;
@@ -969,6 +975,13 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   .restaurants__list {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .restaurants__list {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 
