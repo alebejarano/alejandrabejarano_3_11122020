@@ -19,7 +19,7 @@
   }
 }
 
-/*fot the loader container*/
+/* this is for the loader container*/
 @keyframes background-loader {
   0% {
     opacity: 1;
