@@ -67,14 +67,14 @@
 /*for the animation to save each plate on the menu*/ 
 @keyframes save-plate {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(6px);
     opacity: 0;
     width: 0;
   }
   100% {
     transform: translateX(0);
     opacity: 1;
-    width: 20%;
+    width: 70px;
   }
 }
 /*for the icon in the save plate animation*/ 
