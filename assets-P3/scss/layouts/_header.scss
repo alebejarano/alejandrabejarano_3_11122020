@@ -11,6 +11,9 @@
         padding: 0 20px;
         @include a-style(black);
         font-size: map-get($font-sizes, heading4 );
+        @media (max-width: 350px) {
+            line-height: 4;
+        }
         @media (min-width: 1024px) {
             font-size: map-get($font-sizes, heading2 );
             line-height: 2.5;
