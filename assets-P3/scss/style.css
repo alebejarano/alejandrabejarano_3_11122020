@@ -553,6 +553,10 @@ label.bookmark-home #bookmark-switch1:checked ~ i.fill-heart, label.bookmark-hom
   }
 }
 
+.menu .menu-heading h2 {
+  max-width: 190px;
+}
+
 .menu .starters, .menu .main-dishes, .menu .desserts {
   margin: 40px 0;
 }
