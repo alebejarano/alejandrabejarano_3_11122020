@@ -2,161 +2,162 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ohmyfood est une enteprise de commande de repas en ligne" />
-    <link rel="stylesheet" href="assets-P3/scss/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">  
-    <script src="https://kit.fontawesome.com/92f9a50f4f.js" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <title>Menu-La note enchantée</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ohmyfood est une enteprise de commande de repas en ligne" />
+  <link rel="stylesheet" href="assets-P3/scss/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/92f9a50f4f.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <title>Menu-La note enchantée</title>
 </head>
 
-<body class="body__menu"><!--Restaurant La note enchantée-->
-    <header class="header">
-        <a class="header__arrow" href="index.html"><i class="fas fa-arrow-left"></i></a>
-        <img class="header__logo" src="assets-P3/images/logo/ohmyfood.svg" alt="logo de Oh my food" /> 
-    </header>
+<body class="body__menu">
+  <!--Restaurant La note enchantée-->
+  <header class="header">
+    <a class="header__arrow" href="index.html" aria-label="Go to homepage"><i class="fas fa-arrow-left"></i></a>
+    <img class="header__logo" src="assets-P3/images/logo/ohmyfood.svg" alt="logo de Oh my food" />
+  </header>
 
-    <main>
-        <div class="menu"><!--restaurant picture in background-image-->
-            <div class="menu__picture note-enchante"
-                title="photo de la nourriture du resturant La note enchantée">
+  <main>
+    <div class="menu">
+      <!--restaurant picture in background-image-->
+      <div class="menu__picture note-enchante" title="photo de la nourriture du resturant La note enchantée">
+      </div>
+      <section class="menu__text">
+        <div class="menu-heading">
+          <!-- Heading Restaurant name-->
+          <h2 class="title-font">La note enchantée</h2>
+          <label for="bookmark-switch" class="bookmark-label">
+            <input type="checkbox" id="bookmark-switch" />
+            <i class="fas fa-heart fill-heart"></i>
+            <i class="far fa-heart empty-heart"></i>
+          </label>
+        </div>
+        <div class="starters">
+          <h4 class="texte-font">ENTRÉES</h4>
+          <div class="menu-choices starters--anim">
+            <div class="meal-choice">
+              <div class="plate">
+                <h5 class="texte-font">Ravioles de foie gras</h5>
+                <p class="texte-font">Accompagnés de leur crème à la truffe</p>
+              </div>
+              <span class="price">25&euro;</span>
+              <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>
             </div>
-            <section class="menu__text">
-                <div class="menu-heading"><!-- Heading Restaurant name-->
-                    <h2 class="title-font">La note enchantée</h2>
-                    <label for="bookmark-switch" class="bookmark-label">
-                        <input type="checkbox" id="bookmark-switch" />
-                        <i class="fas fa-heart fill-heart"></i>
-                        <i class="far fa-heart empty-heart"></i>
-                    </label>
-                </div>
-                <div class="starters">
-                    <h4 class="texte-font">ENTRÉES</h4>
-                    <div class="menu-choices starters--anim">
-                        <div class="meal-choice">
-                            <div class="plate">
-                                <h5 class="texte-font">Ravioles de foie gras</h5>
-                                <p class="texte-font">Accompagnés de leur crème à la truffe</p>
-                            </div>
-                            <span class="price">25&euro;</span>
-                            <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>                            
-                        </div>
-                        <div class="meal-choice">
-                            <div class="plate">
-                                <h5 class="texte-font">Caviar osciètre</h5>
-                                <p class="texte-font">Sur blini à la farine de blé noir</p>
-                            </div>
-                            <span class="price">35&euro;</span>
-                            <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>                            
-                        </div>
-                        <div class="meal-choice">
-                            <div class="plate">
-                                <h5 class="texte-font">Homard et espuma de potiron</h5>
-                                <p class="texte-font">Mariné aux zestes d'orange</p>
-                            </div>
-                            <span class="price">20&euro;</span>
-                            <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>                            
-                        </div>
-                        <div class="meal-choice">
-                            <div class="plate">
-                                <h5 class="texte-font">Foie gras de canard cuit entier</h5>
-                                <p class="texte-font">Confiture de figue et pain toasté</p>
-                            </div>
-                            <span class="price">35&euro;</span>
-                            <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="main-dishes">
-                    <h4 class="texte-font">PLATS</h4>
-                    <div class="menu-choices main-dishes--anim">
-                        <div class="meal-choice">
-                            <div class="plate">
-                                <h5 class="texte-font">Noix de coquilles Saint-Jacques</h5>
-                                <p class="texte-font">Sur lit de purée de céleri-rave</p>
-                            </div>
-                            <span class="price">40&euro;</span>
-                            <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>                            
-                        </div>
-                        <div class="meal-choice">
-                            <div class="plate">
-                                <h5 class="texte-font">Langoustine poêlée</h5>
-                                <p class="texte-font">Purée de patate douce</p>
-                            </div>
-                            <span class="price">35&euro;</span>
-                            <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>                            
-                        </div>
-                        <div class="meal-choice">
-                            <div class="plate">
-                                <h5 class="texte-font">Mijoté de queue de boeuf </h5>
-                                <p class="texte-font">Et riz sauvage aux zestes de citron</p>
-                            </div>
-                            <span class="price">44&euro;</span>
-                            <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="desserts">
-                    <h4 class="texte-font">DESSERTS</h4>
-                    <div class="menu-choices desserts--anim">
-                        <div class="meal-choice">
-                            <div class="plate">
-                                <h5 class="texte-font">Macaron noisette et chocolat</h5>
-                                <p class="texte-font">Glace au caramel brun et sel de Guérande</p>
-                            </div>
-                            <span class="price">18&euro;</span>
-                            <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>                            
-                        </div>
-                        <div class="meal-choice">
-                            <div class="plate">
-                                <h5 class="texte-font">Baba au rhum revisité </h5>
-                                <p class="texte-font">Avec son coulis de citron</p>
-                            </div>
-                            <span class="price">22&euro;</span>
-                            <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>                            
-                        </div>
-                        <div class="meal-choice">
-                            <div class="plate">
-                                <h5 class="texte-font">Tarte au citron meringuée </h5>
-                                <p class="texte-font">Déstructurée</p>
-                            </div>
-                            <span class="price">23&euro;</span>
-                            <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>                           
-                        </div>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn--size">Commander</button>
-            </section>  
-        </div>   
-    </main>
+            <div class="meal-choice">
+              <div class="plate">
+                <h5 class="texte-font">Caviar osciètre</h5>
+                <p class="texte-font">Sur blini à la farine de blé noir</p>
+              </div>
+              <span class="price">35&euro;</span>
+              <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>
+            </div>
+            <div class="meal-choice">
+              <div class="plate">
+                <h5 class="texte-font">Homard et espuma de potiron</h5>
+                <p class="texte-font">Mariné aux zestes d'orange</p>
+              </div>
+              <span class="price">20&euro;</span>
+              <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>
+            </div>
+            <div class="meal-choice">
+              <div class="plate">
+                <h5 class="texte-font">Foie gras de canard cuit entier</h5>
+                <p class="texte-font">Confiture de figue et pain toasté</p>
+              </div>
+              <span class="price">35&euro;</span>
+              <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="main-dishes">
+          <h4 class="texte-font">PLATS</h4>
+          <div class="menu-choices main-dishes--anim">
+            <div class="meal-choice">
+              <div class="plate">
+                <h5 class="texte-font">Noix de coquilles Saint-Jacques</h5>
+                <p class="texte-font">Sur lit de purée de céleri-rave</p>
+              </div>
+              <span class="price">40&euro;</span>
+              <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>
+            </div>
+            <div class="meal-choice">
+              <div class="plate">
+                <h5 class="texte-font">Langoustine poêlée</h5>
+                <p class="texte-font">Purée de patate douce</p>
+              </div>
+              <span class="price">35&euro;</span>
+              <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>
+            </div>
+            <div class="meal-choice">
+              <div class="plate">
+                <h5 class="texte-font">Mijoté de queue de boeuf </h5>
+                <p class="texte-font">Et riz sauvage aux zestes de citron</p>
+              </div>
+              <span class="price">44&euro;</span>
+              <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="desserts">
+          <h4 class="texte-font">DESSERTS</h4>
+          <div class="menu-choices desserts--anim">
+            <div class="meal-choice">
+              <div class="plate">
+                <h5 class="texte-font">Macaron noisette et chocolat</h5>
+                <p class="texte-font">Glace au caramel brun et sel de Guérande</p>
+              </div>
+              <span class="price">18&euro;</span>
+              <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>
+            </div>
+            <div class="meal-choice">
+              <div class="plate">
+                <h5 class="texte-font">Baba au rhum revisité </h5>
+                <p class="texte-font">Avec son coulis de citron</p>
+              </div>
+              <span class="price">22&euro;</span>
+              <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>
+            </div>
+            <div class="meal-choice">
+              <div class="plate">
+                <h5 class="texte-font">Tarte au citron meringuée </h5>
+                <p class="texte-font">Déstructurée</p>
+              </div>
+              <span class="price">23&euro;</span>
+              <div class="add-plate"><i class="fas fa-check-circle check-icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--size">Commander</button>
+      </section>
+    </div>
+  </main>
 
-    <footer class="footer">
-        <h4 class="footer__heading title-font">Ohmyfood</h4>
-        <ul class="footer__list">
-            <li class="footer-li texte-font">
-                <a class="footer-a footer-a--bold" href="#"><span class="footer-icon">
-                <i class="fas fa-utensils"></i></span>Proposer un restaurant</a>
-            </li>
-            <li class="footer-li texte-font">
-                <a class="footer-a footer-a--bold" href="#"><span class="footer-icon">
-                <i class="fas fa-hands-helping"></i></span>Devenir partenaire</a>
-            </li>
-            <li class="footer-li texte-font">
-                <a class="footer-a" href="#">Mentions légales</a>
-            </li>
-            <li class="footer-li texte-font">
-                <a class="footer-a" href="mailto:conatct@ohmyfood.com">Contact</a>
-            </li>
-        </ul>
-    </footer>
+  <footer class="footer">
+    <h4 class="footer__heading title-font">Ohmyfood</h4>
+    <ul class="footer__list">
+      <li class="footer-li texte-font">
+        <a class="footer-a footer-a--bold" href="#"><span class="footer-icon">
+            <i class="fas fa-utensils"></i></span>Proposer un restaurant</a>
+      </li>
+      <li class="footer-li texte-font">
+        <a class="footer-a footer-a--bold" href="#"><span class="footer-icon">
+            <i class="fas fa-hands-helping"></i></span>Devenir partenaire</a>
+      </li>
+      <li class="footer-li texte-font">
+        <a class="footer-a" href="#">Mentions légales</a>
+      </li>
+      <li class="footer-li texte-font">
+        <a class="footer-a" href="mailto:conatct@ohmyfood.com">Contact</a>
+      </li>
+    </ul>
+  </footer>
 </body>
 
 </html>
-
